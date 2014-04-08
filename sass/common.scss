@@ -1,22 +1,24 @@
 @charset "utf-8";
 @import "compass/css3";
-//@import "compass/reset";
 @import"compass/typography";
 
 $base-font-size: 16px;
 $base-line-height: 12px;
 @include establish-baseline;
-$font-color: #777;
+$font-color: #555;
 $body-bg-color: #A2A749;
 $hover-bg-color: #E0E0E0;
-$border-bottom-color: #DDD;
+$border-bottom-color: #E2E2E2;
 $navigation-color: #222;
 $navigation-hover-color: #FFF;
 $article-content-color: #AAA;
 $article-wrapper-bg-color: #F5F5D5;
 $footer-header-bg-color: #222;
-%active{
+%border-radius{
 	@include border-radius(4px);
+}
+%active{
+	@extend %border-radius;
 	color: $navigation-hover-color;	
 	background-color: $footer-header-bg-color;	
 }
@@ -78,15 +80,52 @@ p, li, .highlight{
 	margin: 0 auto;
 }
 .wrapper{
-	padding-bottom: 5em;
+	position: relative;
+	padding-bottom: 4em;
+}
+.navigation ul, .footer-wrapper ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.footer-wrapper ul li{
+	margin: 0;
+}
+.pagination{
+	line-height: 0;
+	padding: .8em 0;
+	text-align: center;
+	a{
+		width: 40px;
+		height: 40px;
+		color: #660;
+		margin: 0 4px;
+		font-weight: bold;
+		line-height: 40px;
+		background-color: #FFF;
+		display: inline-block;
+		text-decoration: none;
+		border: 1px solid #AAA;	
+		@extend %border-radius;
+		@include transition(background-color .2s ease-in-out);
+		&:hover{
+			color: #FFF;
+			background-color: #222; 	
+		}	
+	}
+	.current{
+		color: #FFF;
+		cursor: default;
+		background-color: #222;
+	}	
 }
 .navigation{
-	/*padding: 1.25em 0;*/
+	padding: 1.25em 0;
 	ul{
-		float: right;
-		list-style: none;		
+		float: right;		
 	}
 	li{
+		margin: 0;
 		float: left;
 		margin-right: .6em;
 	}
@@ -169,12 +208,31 @@ p, li, .highlight{
 .footer-wrapper{
 	bottom: 0;
 	width: 100%;
-	height: 3.3em;
-	line-height: 3.3em;
 	position: absolute;
 	background-color: $footer-header-bg-color;
 	.footer{
 		color: $article-content-color;
+	}
+	ul{
+		padding: 6px 0;
+	}
+	li{
+		float: left;
+		padding: 0 4px;
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+		a{
+			color: #888;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+				color: $article-content-color;
+			}
+		}
 	}
 }
 .clearfix{
@@ -186,5 +244,23 @@ p, li, .highlight{
 		content: " ";
 		clear: both;
 		height: 0;		
+	}
+}
+.go2Top{
+	left: 90%;
+    z-index: 2;
+	width: 1em;
+	bottom: 4em;	
+    padding: .4em;
+    color: #FFF;
+    opacity: 0;  
+    line-height: 1.2em;
+	position: fixed;
+	text-decoration: none;
+	background-color: #222;
+	@extend %border-radius;
+	@include transition(all .3s ease-in-out);
+	&:hover{
+		background-color: #000;	
 	}
 }

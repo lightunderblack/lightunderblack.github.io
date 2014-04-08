@@ -1,6 +1,25 @@
 <footer class="footer-wrapper">
 	<div class="footer">
-		Copyright &copy 2014 Shiny Bender
-		<!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000355995'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000355995%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->		
+		<ul class="clearfix">
+			<li>&copy {{site.time|date:'%Y'}} Shiny Bender</li>
+			<li>|</li>
+			<li>powered by <a href="http://jekyllrb.com/">Jekyll</a></li>
+			<li>|</li>
+			<li>themed by <a href="http://lightunderblack.github.io/">Shiny Bender</a></li>
+			<li>|</li>
+			<li>hosted by <a href="http://github.com/">GitHub</a></li>
+		</ul>	
 	</div>	
 </footer>
+<script src="/javascript/jquery-1.10.2.js"></script>	
+<script src="/javascript/smoothscroll.js"></script>
+<script>
+(function($){
+	//初始化
+    new SmoothScroll({
+        container: $(window),
+        go2Top: $('.go2Top'),
+        destination: $('.wrapper')
+    });
+})(jQuery);
+</script>

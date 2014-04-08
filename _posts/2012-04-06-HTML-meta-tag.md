@@ -6,7 +6,7 @@ activePage: blogItem
 
 *meta*是用来在*HTML*文档中模拟*HTTP*协议的响应头报文。*meta*标签用于网页的`<head>`与`</head>`中，*meta*标签的用处很多。*meta*的属性有两种：*name*和*http-equiv*。*name*属性主要用于描述网页，对应于*content*（网页内容），以便于搜索引擎机器人查找、分类（目前几乎所有的搜索引擎都使用网上机器人自动查找*meta*值来给网页分类）。这其中最重要的是*description*（站点在搜索引擎上的描述）和*keywords*（分类关键词），所以应该给每页加一个*meta*值。比较常用的有以下几个：
 
-###name属性###
+#####name属性#####
 
 1. `<meta name="generator" contect="">`用以说明生成工具（如*Microsoft FrontPage 4.0*）等
 2. `<meta name="keywords" contect="">`向搜索引擎说明你的网页的关键词
@@ -20,7 +20,7 @@ activePage: blogItem
 	+ 设定为*noindex*：文件将不被检索，但页面上的链接可以被查询
 	+ 设定为*nofollow*：文件将不被检索，页面上的链接可以被查询
 
-###http-equiv属性###
+#####http-equiv属性#####
 
 1. `<meta http-equiv="Content-Type" contect="text/html";charset=gb_2312-80">`和 `<meta http-equiv="Content-Language" contect="zh-CN">`用以说明主页制作所使用的文字以及语言；又如英文是*ISO-8859-1*字符集，还有*BIG5*、*utf-8*、*shift-Jis*、*Euc*、*Koi8-2*等字符集
 2. `<meta http-equiv="refresh" contect="n;url=http://yourlink">`定时让网页在指定的时间*n*内，跳转到页面*http://yourlink*

@@ -7,7 +7,7 @@ activePage: blogItem
 
 *jQuery*源码中多处使用正则表达式处理字符串，挑选其中部分正则表达式加于研究，以加深对正则表达式的理解，巩固知识。本次涉及到的*JavaScript*正则表达式的概念有：*组合*、*选择*、*引用*。
 
-<h3>1、quickExpr = /^(?:[^#<]*(<[\w\W]+>)[^>]*$|#([\w\-]*)$)/;</h3>
+<h5>1、quickExpr = /^(?:[^#<]*(<[\w\W]+>)[^>]*$|#([\w\-]*)$)/;</h5>
 
 该正则表达式匹配以下两种情况：
 
@@ -32,7 +32,7 @@ match = ['<span>正则</span>','<span>正则</span>',undefined];
 match = ['#myId',undefined,'myId'];
 {%endhighlight%}
 
-<h3>2、rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>)?$/;</h3>
+<h5>2、rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>)?$/;</h5>
 
 该正则表达式匹配单个html标签，有以下两种形式：
 
