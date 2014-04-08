@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>ShinyBender Blog</title>
+	<!--[if lt IE 9]>
+	    <script src="/javascript/lib/html5shiv.js"></script>
+	<![endif]-->	
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/syntax.css">	
+</head>
+<body class="{{page.activePage}}">
+	<div class="wrapper">
+		{%include header.html%}
+		<div class="container clearfix">
+			<div class="article-wrapper">{{content}}</div>
+			<div class="sidenav-wrapper"></div>
+		</div>	
+	</div>
+	{%include footer.html%}				
+</body>
+</html>

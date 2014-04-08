@@ -1,0 +1,19 @@
+---
+layout: default
+activePage: blog
+---
+{%for post in site.posts%}
+<article class="article">
+	<header class="article-header">
+		<h5 class="title"><a href="{{post.url}}">{{post.title}}</a></h5>
+		<p class="time-tags">
+			<span class="time">{{post.date|date:"%Y-%m-%d"}}</span>
+			<span class="tags">标签:</span>
+		</p>		
+	</header>
+	<div class="article-content">
+		{{post.excerpt}}
+		<a class="read-all" href="{{post.url}}" target="_self">阅读全文</a>
+	</div>
+</article>
+{%endfor%}

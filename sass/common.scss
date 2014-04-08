@@ -1,0 +1,190 @@
+@charset "utf-8";
+@import "compass/css3";
+//@import "compass/reset";
+@import"compass/typography";
+
+$base-font-size: 16px;
+$base-line-height: 12px;
+@include establish-baseline;
+$font-color: #777;
+$body-bg-color: #A2A749;
+$hover-bg-color: #E0E0E0;
+$border-bottom-color: #DDD;
+$navigation-color: #222;
+$navigation-hover-color: #FFF;
+$article-content-color: #AAA;
+$article-wrapper-bg-color: #F5F5D5;
+$footer-header-bg-color: #222;
+%active{
+	@include border-radius(4px);
+	color: $navigation-hover-color;	
+	background-color: $footer-header-bg-color;	
+}
+%time-tag{
+	margin: 0;
+	font-size: 14px;
+	color: $article-content-color;	
+}
+%title-hover{
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}	
+}
+html{
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	position: relative;
+	font-size: $base-font-size;
+	background: $body-bg-color;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	color: #660;
+}
+h1{
+	@include adjust-font-size-to(32px);
+}
+h2{
+	@include adjust-font-size-to(28px);
+}
+h3{
+	@include adjust-font-size-to(24px);
+}
+h4{
+	@include adjust-font-size-to(22px);
+}
+h5{
+	@include adjust-font-size-to(20px);
+}
+h6{
+	@include adjust-font-size-to(18px);
+}
+p, li, .highlight{
+	@include leader;
+	@include trailer;
+	line-height: 1.8em;
+}
+.home #home, .blog #blog, .about #about, .contact #contact{
+	@extend %active;
+}
+.wrapper, .footer{
+	width: 960px;
+	margin: 0 auto;
+}
+.wrapper{
+	padding-bottom: 5em;
+}
+.navigation{
+	/*padding: 1.25em 0;*/
+	ul{
+		float: right;
+		list-style: none;		
+	}
+	li{
+		float: left;
+		margin-right: .6em;
+	}
+	a{
+		width: 60px;
+		height: 2em;
+		line-height: 2em;
+		display: block;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: $navigation-color;
+		@include transition(all .3s ease-in-out);
+		&:hover{
+			@extend %active;	
+		}		
+	}
+}
+.article-wrapper{
+	width: 80%;
+	float: left;
+	color: $font-color;
+	@include border-radius(6px);
+	background: $article-wrapper-bg-color;	
+}
+.blogItem .article-wrapper, .article{
+	width: auto;
+	float: none;
+	padding: 14px 2.60416666666667%;	
+}
+.blogItem {
+	.article-wrapper{
+		padding-top: 28px;
+		padding-bottom: 28px;
+		color: $navigation-color;
+		p:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.article-time{
+		@extend %time-tag;
+	}
+	h1, h2, h3, h4, h5, h6{
+		font-weight: bold;
+	}
+}
+.article{
+	border-bottom: 1px solid $border-bottom-color;
+	@include transition(all .3s ease-in-out);
+	&:last-child{
+		border-bottom: none;
+	}
+	a{
+		color: #660;
+	}
+	.article-header{
+		margin: 0;
+	}
+	.article-content{
+		color: $font-color;
+		p{
+			margin: .6em 0;
+		}
+		@extend %title-hover;
+	}
+	.time-tags{
+		@extend %time-tag;
+	}
+	.time{
+		padding-right: 10px;
+	}
+	.title{
+		@extend %title-hover;
+	}
+}	
+.sidenav-wrapper{
+	width: 20%;
+	float: right;
+}	
+.footer-wrapper{
+	bottom: 0;
+	width: 100%;
+	height: 3.3em;
+	line-height: 3.3em;
+	position: absolute;
+	background-color: $footer-header-bg-color;
+	.footer{
+		color: $article-content-color;
+	}
+}
+.clearfix{
+	*zoom: 1;/**fix IE6-7*/
+	&:after{
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;		
+	}
+}

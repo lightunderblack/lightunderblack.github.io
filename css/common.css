@@ -1,0 +1,244 @@
+/* line 61, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 0.75em;
+}
+
+/* line 18, ../sass/common.scss */
+.home #home, .blog #blog, .about #about, .contact #contact, .navigation a:hover {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  color: white;
+  background-color: #222222;
+}
+
+/* line 23, ../sass/common.scss */
+.blogItem .article-time, .article .time-tags {
+  margin: 0;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+/* line 29, ../sass/common.scss */
+.article .article-content a, .article .title a {
+  text-decoration: none;
+}
+/* line 31, ../sass/common.scss */
+.article .article-content a:hover, .article .title a:hover {
+  text-decoration: underline;
+}
+
+/* line 36, ../sass/common.scss */
+html {
+  height: 100%;
+}
+
+/* line 39, ../sass/common.scss */
+body {
+  min-height: 100%;
+  position: relative;
+  font-size: 16px;
+  background: #a2a749;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 46, ../sass/common.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #660;
+}
+
+/* line 50, ../sass/common.scss */
+h1 {
+  font-size: 2em;
+  line-height: 1.125em;
+}
+
+/* line 53, ../sass/common.scss */
+h2 {
+  font-size: 1.75em;
+  line-height: 1.28571em;
+}
+
+/* line 56, ../sass/common.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* line 59, ../sass/common.scss */
+h4 {
+  font-size: 1.375em;
+  line-height: 1.63636em;
+}
+
+/* line 62, ../sass/common.scss */
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+
+/* line 65, ../sass/common.scss */
+h6 {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+
+/* line 68, ../sass/common.scss */
+p, li, .highlight {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  line-height: 1.8em;
+}
+
+/* line 76, ../sass/common.scss */
+.wrapper, .footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 80, ../sass/common.scss */
+.wrapper {
+  padding-bottom: 5em;
+}
+
+/* line 83, ../sass/common.scss */
+.navigation {
+  /*padding: 1.25em 0;*/
+}
+/* line 85, ../sass/common.scss */
+.navigation ul {
+  float: right;
+  list-style: none;
+}
+/* line 89, ../sass/common.scss */
+.navigation li {
+  float: left;
+  margin-right: .6em;
+}
+/* line 93, ../sass/common.scss */
+.navigation a {
+  width: 60px;
+  height: 2em;
+  line-height: 2em;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #222222;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 108, ../sass/common.scss */
+.article-wrapper {
+  width: 80%;
+  float: left;
+  color: #777777;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background: #f5f5d5;
+}
+
+/* line 115, ../sass/common.scss */
+.blogItem .article-wrapper, .article {
+  width: auto;
+  float: none;
+  padding: 14px 2.60416666666667%;
+}
+
+/* line 121, ../sass/common.scss */
+.blogItem .article-wrapper {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #222222;
+}
+/* line 125, ../sass/common.scss */
+.blogItem .article-wrapper p:last-child {
+  margin-bottom: 0;
+}
+/* line 132, ../sass/common.scss */
+.blogItem h1, .blogItem h2, .blogItem h3, .blogItem h4, .blogItem h5, .blogItem h6 {
+  font-weight: bold;
+}
+
+/* line 136, ../sass/common.scss */
+.article {
+  border-bottom: 1px solid #dddddd;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 139, ../sass/common.scss */
+.article:last-child {
+  border-bottom: none;
+}
+/* line 142, ../sass/common.scss */
+.article a {
+  color: #660;
+}
+/* line 145, ../sass/common.scss */
+.article .article-header {
+  margin: 0;
+}
+/* line 148, ../sass/common.scss */
+.article .article-content {
+  color: #777777;
+}
+/* line 150, ../sass/common.scss */
+.article .article-content p {
+  margin: .6em 0;
+}
+/* line 158, ../sass/common.scss */
+.article .time {
+  padding-right: 10px;
+}
+
+/* line 165, ../sass/common.scss */
+.sidenav-wrapper {
+  width: 20%;
+  float: right;
+}
+
+/* line 169, ../sass/common.scss */
+.footer-wrapper {
+  bottom: 0;
+  width: 100%;
+  height: 3.3em;
+  line-height: 3.3em;
+  position: absolute;
+  background-color: #222222;
+}
+/* line 176, ../sass/common.scss */
+.footer-wrapper .footer {
+  color: #aaaaaa;
+}
+
+/* line 180, ../sass/common.scss */
+.clearfix {
+  *zoom: 1;
+  /**fix IE6-7*/
+}
+/* line 182, ../sass/common.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
