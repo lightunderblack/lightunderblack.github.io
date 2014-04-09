@@ -2,6 +2,7 @@
 layout: post
 title: jQuery源码分析之正则表达式
 activePage: blogItem
+tags: ["JavaScript", "RegExp"]
 ---
 
 

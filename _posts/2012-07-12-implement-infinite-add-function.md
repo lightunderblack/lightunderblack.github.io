@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: javascript实现add方法无限调用
 activePage: blogItem
+tags: ["JavaScript"]
 ---
 
 *javascript*实现*add*方法无限调用

@@ -1,0 +1,26 @@
+/**navigation*/
+.navigation{
+	padding: 1.25em 0;
+	ul{
+		float: right;		
+	}
+	li{
+		margin: 0;
+		float: left;
+		margin-right: .6em;
+	}
+	a{
+		width: 60px;
+		height: 2em;
+		line-height: 2em;
+		display: block;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: $navigation-color;
+		@include transition(all .3s ease-in-out);
+		&:hover{
+			@extend %active;	
+		}		
+	}
+}

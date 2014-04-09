@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 实现滚动条触底加载数据
 activePage: blogItem
+tags: ["JavaScript"]
 ---
 
 实现滚动条触底加载数据

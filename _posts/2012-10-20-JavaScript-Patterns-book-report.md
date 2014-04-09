@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 《JavaScript Patterns》读书笔记
 activePage: blogItem
+tags: ["JavaScript", "JavaScript Patterns"]
 ---
 
 在此只是列出*《JavaScript patterns》*书中涉及到的关键词，不会对每个关键词含义进行解释，便于以后思维发散。顺便向大家推荐这部著作，暂无中译本。

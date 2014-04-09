@@ -4,11 +4,9 @@
 	<meta charset="UTF-8">
 	<title>ShinyBender Blog</title>
 	<!--[if lt IE 9]>
-	    <script src="{{site.url}}/javascript/lib/html5shiv.js"></script>
+	    <script src="/javascript/lib/html5shiv.js"></script>
 	<![endif]-->	
-	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/common.css">
-	<link rel="stylesheet" href="/css/syntax.css">	
+	<link rel="stylesheet" href="/css/post.css">	
 </head>
 <body class="{{page.activePage}}">
 	<div class="wrapper">
@@ -16,11 +14,20 @@
 		<div class="container clearfix">
 			<div class="article-wrapper">
 				<h1>{{page.title}}</h1>
-				<p class="article-time">日期：{{page.date|date:"%Y年%m月%d日"}}</p>
+				<p class="time-tag">
+					<span class="time">{{page.date|date:"%Y年%m月%d日"}}</span>
+					<span class="tag-label">标签:</span>
+					{% for tag in page.tags %}
+					<a class="tag" href="/tag/{{ tag }}">{{ tag }}</a>  
+					{% endfor %}
+				</p>				
+				<!--文章内容-->
 				{{content}}
-			</div>
+				<!--留言板-->
+				{%include comment.html%}				
+			</div>			
 		</div>
-		<a class="go2Top" href="javascript:void(0)">返回顶部</a>		
+		<a class="go2Top" href="javascript:void(0)">返回顶部</a>
 	</div>
 	{%include footer.html%}					
 </body>

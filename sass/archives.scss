@@ -1,0 +1,24 @@
+@import 'other';
+
+.archives-list{
+	padding-left: 40px;	
+	p{
+		margin: 0;
+		line-height: 1em;
+	}
+	h5{
+		margin-left: -42px;
+	}
+	a{
+		color: #777;
+		font-weight: bold;
+		text-decoration: none;
+		@include transition(color .2s ease-in-out);
+		&:hover{
+			color: #222;
+		}
+	}
+	.time-tag{
+		@extend %time-tag;
+	}	
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>ShinyBender Blog</title>
+	<!--[if lt IE 9]>
+	    <script src="/javascript/lib/html5shiv.js"></script>
+	<![endif]-->	
+	<link rel="stylesheet" href="/css/{{page.activePage}}.css">	
+</head>
+<body class="{{page.activePage}}">
+	<div class="wrapper">
+		{%include header.html%}
+		<div class="article-wrapper">
+			<div class="article">
+				<!--内容-->
+				{{content}}
+				<!--留言板-->
+				{%include comment.html%}				
+			</div>
+		</div>
+		<a class="go2Top" href="javascript:void(0)">返回顶部</a>	
+	</div>
+	{%include footer.html%}			
+</body>
+</html>

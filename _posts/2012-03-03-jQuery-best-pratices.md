@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: jQuery性能最佳实践
 activePage: blogItem
+tags: ["JavaScript", "jQuery"]
 ---
 
 jQuery性能最佳实践

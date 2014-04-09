@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import "compass/css3";
+
+@import "reset";
+@import "variable";
+@import "class";
+
+@import "syntax";
+@import "typography";
+
+@import "common";
+@import "component/sidenav";
+@import "component/navigation";
+@import "component/pagination";
+@import "component/footer";
+
+/**main content*/
+.article-wrapper{
+	width: 80%;
+	float: left;	
+}
+.article{
+	width: auto;
+	float: none;
+	padding: 14px 2.60416666666667%;	
+	border-bottom: 1px solid $border-bottom-color;
+	@include transition(all .3s ease-in-out);
+	&:last-child{
+		border-bottom: none;
+	}
+	a{
+		color: #660;
+	}
+	.article-header{
+		margin: 0;
+	}
+	.article-content{
+		color: $font-color;
+		p{
+			margin: .6em 0;
+		}
+		@extend %title-hover;
+	}
+	.time-tag{
+		@extend %time-tag;
+	}
+	.title{
+		@extend %title-hover;
+	}
+}
+.sidenav-wrapper{
+	width: 20%;
+	float: right;
+}	
+
+
+
+

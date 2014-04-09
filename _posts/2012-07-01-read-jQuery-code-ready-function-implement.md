@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: jQuery源码分析之ready方法
 activePage: blogItem
+tags: ["JavaScript", "jQuery"]
 ---
 
 *ready*是在页面的*DOM*元素加载完成后执行回调函数（确切地说应该是回调函数列表）的方法，*ready*方法可多次被调用，传入的回调函数（单个或多个）将逐一放入回调函数列表*readyList*中，当*ready*事件（当然*DOM*事件中是没有所谓的*ready*事件的，这里只是为了解释自己起的）触发后，将逐一执行*readyList*中的回调函数

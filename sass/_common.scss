@@ -1,0 +1,82 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    position: relative;
+    font-size: $base-font-size;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: $body-bg-color;  
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    color: #555;
+}
+
+.home #home, .archives #archives, .blog #blog, .about #about, .contact #contact{
+	@extend %active;
+}
+
+.wrapper, .footer{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	position: relative;
+	padding-bottom: 4em;
+}
+
+.navigation ul, .footer-wrapper ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-wrapper ul li{
+	margin: 0;
+}
+
+.article-wrapper{
+	color: $font-color;
+	@include border-radius(6px);
+	@include box-shadow(1px 0px 20px 1px #555, -1px 0px 20px 1px #555);
+	background: $article-wrapper-bg-color;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;	
+}
+
+/**clear float*/
+.clearfix{
+	*zoom: 1;/**fix IE6-7*/
+	&:after{
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;		
+	}
+}
+
+/**go to top button*/
+.go2Top{
+	left: 84%;
+    z-index: 2;
+	width: 1em;
+	bottom: 4em;	
+    padding: .4em;
+    color: #FFF;
+    opacity: 0;  
+    line-height: 1.2em;
+	position: fixed;
+	text-decoration: none;
+	background-color: #222;
+	@extend %border-radius;
+	@include transition(all .3s ease-in-out);
+	&:hover{
+		background-color: #000;	
+	}
+}

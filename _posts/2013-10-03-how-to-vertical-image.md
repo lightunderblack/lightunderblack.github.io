@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: image居中显示
 activePage: blogItem
+tags: ["CSS"]
 ---
 
 实现*image*居中显示。

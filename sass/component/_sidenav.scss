@@ -1,0 +1,21 @@
+.sidenav{
+	padding: 14px 0 0 16px;
+	h5{
+		color: $side-nav-title-color;
+	}
+	ul, li{
+		margin: 0;
+	}
+	ul {
+		list-style: none;
+		padding-left: 20px;
+	}
+	a {
+		font-weight: bold;
+		color: $side-nav-link-color;
+		@include transition(color .3s ease-in-out);
+		&:hover{
+			color: $side-nav-link-hover-color;
+		}
+	}
+}

@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: jQuery源码分析之extend方法
 activePage: blogItem
+tags: ["JavaScript", "jQuery"]
 ---
 
 解析*jQuery*的*extend*方法之实现

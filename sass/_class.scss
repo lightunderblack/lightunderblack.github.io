@@ -1,0 +1,38 @@
+%border-radius{
+	@include border-radius(4px);
+}
+
+%active{
+	@extend %border-radius;
+	color: $navigation-hover-color;	
+	background-color: $footer-header-bg-color;	
+}
+
+%time-tag{
+	margin: 0;
+	font-size: 12px;
+	color: $article-content-color;	
+	.tag-label{
+		padding-left: 10px;	
+	}
+	.tag{
+		padding-right: 4px;
+	}
+	a{
+		color: #AAA;
+		text-decoration: underline;
+		@include transition(color .2s ease-in-out);
+		&:hover{
+			color: #000;		
+		}
+	}	
+}
+
+%title-hover{
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}	
+}

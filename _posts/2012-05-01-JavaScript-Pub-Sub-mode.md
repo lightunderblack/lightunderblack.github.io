@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: JavaScript之Publish/Subscribe模式
 activePage: blogItem
+tags: ["JavaScript"]
 ---
 
 发布/订阅，是一种由两个部分构成:发布者和订阅者的消息传递模式。发布者将消息发布到特定频道，而订阅者接听频道，当频道上有消息发布时将接收到通知。

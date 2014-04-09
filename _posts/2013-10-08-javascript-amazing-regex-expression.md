@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 神奇JavaScript之正则
 activePage: blogItem
+tags: ["JavaScript", "RegExp"]
 ---
 
 今朝在技术群里，碰到有人问这样一个问题：使用正则去掉字符串中相邻的重复字符，比如字符串*"ddssssaaaadkslsls"*，去除相邻重复字符后，结果为*"dsadksls"*。

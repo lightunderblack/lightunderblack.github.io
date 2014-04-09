@@ -1,0 +1,16 @@
+<div class="sidenav">
+	<h6>归档</h6>
+	<ul>
+	  {% for post in site.posts %}
+	    {% unless post.next %}
+	      <li><a href="{{site.url}}/archives/index.html#{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a></li>
+	    {% else %}
+	      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+	      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+	      {% if year != nyear %}
+	        <li><a href="{{site.url}}/archives/index.html#{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a></li>
+	      {% endif %}
+	    {% endunless %}
+	  {% endfor %}
+	</ul>	
+</div>

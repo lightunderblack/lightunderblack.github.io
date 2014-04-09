@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 《JavaScript权威指南》读书笔记之正则表达式
 activePage: blogItem
+tags: ["JavaScript"]
 ---
 
 *《JavaScript权威指南》*读书笔记之正则表达式

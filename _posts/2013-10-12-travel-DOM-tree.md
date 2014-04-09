@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 遍历DOM精简实现
 activePage: blogItem
+tags: ["JavaScript", "JavaScript DOM"]
 ---
 
 在不用框架/库*（jQuery/mootools）*前提下，用比较精简代码实现遍历*DOM*树。

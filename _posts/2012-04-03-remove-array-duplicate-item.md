@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 剔除数组重复元素的简单方法
 activePage: blogItem
+tags: ["JavaScript"]
 ---
 
 实现剔除数组相同元素的方法

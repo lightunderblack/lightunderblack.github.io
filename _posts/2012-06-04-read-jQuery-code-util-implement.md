@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: jQuery源码分析之jQuery工具方法
 activePage: blogItem
+tags: ["JavaScript", "jQuery"]
 ---
 
 分析*jQuery*工具方法，学习高手编写代码技巧。其中*jQuery.type*、*jQuery.map*实现独特。

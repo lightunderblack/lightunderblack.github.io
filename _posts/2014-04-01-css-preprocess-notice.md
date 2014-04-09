@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 使用CSS预处理器注意事项
 activePage: blogItem
+tags: ["CSS"]
 ---
 
 *CSS*处理器的出现极大提高样式代码的模块化、可维护性，但在使用*CSS*预处理器时需要注意以下几点：

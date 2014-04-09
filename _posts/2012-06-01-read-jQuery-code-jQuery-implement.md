@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: jQuery源码分析之jQuery的定义
 activePage: blogItem
+tags: ["JavaScript", "jQuery"]
 ---
 
 *jQuery*源码分析之*jQuery*的定义

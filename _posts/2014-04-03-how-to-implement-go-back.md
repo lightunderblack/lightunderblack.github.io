@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 返回顶部按钮的实现
 activePage: blogItem
+tags: ["JavaScript", "CSS3"]
 ---
 
 返回顶部的快捷按钮在*web*页面中普遍存在，不过有些实现得并不理想，滚动条瞬间滚到页面顶部，过程不平滑而影响用户体验。在此列举实现返回顶部的若干方法，并分析优劣。

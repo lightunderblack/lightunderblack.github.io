@@ -1,0 +1,29 @@
+/**pagination*/
+.pagination{
+	line-height: 0;
+	padding: .8em 0;
+	text-align: center;
+	a{
+		width: 40px;
+		height: 40px;
+		color: #660;
+		margin: 0 4px;
+		font-weight: bold;
+		line-height: 40px;
+		background-color: #FFF;
+		display: inline-block;
+		text-decoration: none;
+		border: 1px solid #AAA;	
+		@extend %border-radius;
+		@include transition(background-color .2s ease-in-out);
+		&:hover{
+			color: #FFF;
+			background-color: #222; 	
+		}	
+	}
+	.current{
+		color: #FFF;
+		cursor: default;
+		background-color: #222;
+	}	
+}

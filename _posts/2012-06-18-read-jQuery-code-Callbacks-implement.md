@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: jQuery源码分析之Callbacks方法
 activePage: blogItem
+tags: ["JavaScript", "jQuery"]
 ---
 
 *jQuery.Callbacks*方法非常重要，它在*jQuery*源码中被多次使用，如在*ready*方法、*Deferred*对象中。它主要的作用是提供管理和操作回调函数列表方法，增删回调函数，遍历执行回调函数，设置回调函数执行的上下文环境和参数等。它封装内部核心逻辑代码，返回闭包*self*对象供外部访问/操作回调函数队列*list*。

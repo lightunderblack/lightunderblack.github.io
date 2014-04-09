@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: execScript与eval区别
 activePage: blogItem
+tags: ["JavaScript"]
 ---
 
 详细分析*execScript*与*eval*异同。

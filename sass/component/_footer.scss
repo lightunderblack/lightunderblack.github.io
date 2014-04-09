@@ -1,0 +1,31 @@
+/**footer*/
+.footer-wrapper{
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	background-color: $footer-header-bg-color;
+	.footer{
+		color: $article-content-color;
+	}
+	ul{
+		padding: 6px 0;
+	}
+	li{
+		float: left;
+		padding: 0 4px;
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+		a{
+			color: #888;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+				color: $article-content-color;
+			}
+		}
+	}
+}

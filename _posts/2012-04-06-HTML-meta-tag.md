@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: HTML之&lt;meta&gt;标签
 activePage: blogItem
+tags: ["HTML"]
 ---
 
 *meta*是用来在*HTML*文档中模拟*HTTP*协议的响应头报文。*meta*标签用于网页的`<head>`与`</head>`中，*meta*标签的用处很多。*meta*的属性有两种：*name*和*http-equiv*。*name*属性主要用于描述网页，对应于*content*（网页内容），以便于搜索引擎机器人查找、分类（目前几乎所有的搜索引擎都使用网上机器人自动查找*meta*值来给网页分类）。这其中最重要的是*description*（站点在搜索引擎上的描述）和*keywords*（分类关键词），所以应该给每页加一个*meta*值。比较常用的有以下几个：

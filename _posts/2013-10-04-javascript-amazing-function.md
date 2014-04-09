@@ -1,7 +1,9 @@
 ---
 layout: post
+comments: true
 title: 神奇的JavaScript之Function
 activePage: blogItem
+tags: ["JavaScript", "Function"]
 ---
 
 众所周知，在*JavaScript*中，内置对象有*constructor*属性指向它的构造函数，如:
