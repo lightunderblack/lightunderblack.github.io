@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6{
     color: #555;
 }
 
-.home #home, .archives #archives, .blog #blog, .about #about, .contact #contact{
+.home #home, .archives #archives, .tags #tags, .blog #blog, .about #about, .contact #contact{
 	@extend %active;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6{
 .article-wrapper{
 	color: $font-color;
 	@include border-radius(6px);
-	@include box-shadow(1px 0px 20px 1px #555, -1px 0px 20px 1px #555);
+	@include box-shadow(1px 0px 50px 1px #555, -1px 0px 50px 1px #555);
 	background: $article-wrapper-bg-color;
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;	
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6{
 
 /**go to top button*/
 .go2Top{
-	left: 84%;
+	left: 86%;
     z-index: 2;
 	width: 1em;
 	bottom: 4em;	

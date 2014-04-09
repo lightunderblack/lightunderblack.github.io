@@ -1,5 +1,5 @@
 <div class="sidenav">
-	<h6>归档</h6>
+	<h5>归档</h5>
 	<ul>
 	  {% for post in site.posts %}
 	    {% unless post.next %}
@@ -12,5 +12,32 @@
 	      {% endif %}
 	    {% endunless %}
 	  {% endfor %}
-	</ul>	
+	</ul>
+	<h5>标签</h5>
+	<ul id="tag-list" style="display:none;">
+		{% for post in site.posts %}
+			{% for tag in post.tags %}
+			   <li>{{tag}}</li>
+			{% endfor %}
+		{% endfor %}	
+	</ul>		
 </div>
+<script type="text/javascript">
+	(function($){
+		$(function(){
+			var html = [];
+			var tagsList = $('#tag-list');
+			var tags = tagsList.children().map(function(){
+				return $(this).text();
+			});
+			var map = {};
+			$.each(tags||[], function(i, n){
+				map[n] = map[n] ? map[n] + 1 : 1;
+			});
+			for(var tag in map){
+				html.push('<li><a href="/tag/'+tag+'">'+tag+'</a></li>');
+			}
+			tagsList.html(html.join('')).show();
+		});
+	})(jQuery);
+</script>

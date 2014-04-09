@@ -7,10 +7,11 @@
 		line-height: 1em;
 	}
 	h5{
+		color: #660;
 		margin-left: -42px;
 	}
 	a{
-		color: #777;
+		color: #666;
 		font-weight: bold;
 		text-decoration: none;
 		@include transition(color .2s ease-in-out);
@@ -20,5 +21,10 @@
 	}
 	.time-tag{
 		@extend %time-tag;
+	}	
+}
+.article{
+	h5{
+		color: #660;
 	}	
 }
