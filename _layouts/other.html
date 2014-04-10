@@ -9,14 +9,16 @@
 	<link rel="stylesheet" href="/css/{{page.activePage}}.css">	
 </head>
 <body class="{{page.activePage}}">
-	<div class="wrapper">
-		{%include header.html%}
+	{%include header.html%}
+	<div class="wrapper clearfix">
 		<div class="article-wrapper">
-			<div class="article">
-				<!--内容-->
-				{{content}}
-				<!--留言板-->
-				{%include comment.html%}				
+			<div class="articles">
+				<div class="article">
+					<!--内容-->
+					{{content}}
+					<!--留言板-->
+					{%include comment.html%}				
+				</div>				
 			</div>
 		</div>
 		<a class="go2Top" href="javascript:void(0)">返回顶部</a>	

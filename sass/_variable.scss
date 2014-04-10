@@ -1,13 +1,51 @@
-$font-color: #666;
+//color
+
+$dark: #000;
+$light-dark: #222; 
+$xlight-dark: #333;
+$xxlight-dark: #555;
+$xxxlight-dark: #666;
+$emphasize-font: #660;
+
+$gray: #AAA;
+
+$font-color: $xxlight-dark;
+$navigation-color: $light-dark;
+$side-nav-title-color: $light-dark; 
+$footer-header-bg-color: $light-dark;
 $body-bg-color: #A2A749;
 $border-bottom-color: #E2E2E2;
-$navigation-color: #222;
 $navigation-hover-color: #FFF;
 $article-content-color: #AAA;
 $article-wrapper-bg-color: #F5F5D5;
-$side-nav-title-color: #333; 
-$side-nav-link-color: #660;
-$side-nav-link-hover-color: #000;  
-$footer-header-bg-color: #222;
-$base-font-size: 16px;
-$base-line-height: 12px;
+$side-nav-link-color: $emphasize-font;
+$side-nav-link-hover-color: $dark;  
+
+//font size, line-height
+$base-font-size: 1em;//default font size 16px
+$base-line-height: 0.75em;//default line height 12px 
+$small-font-size: 0.875em;//14px
+$xsmall-font-size: 0.8125em;//13px
+$xxsmall-font-size: 0.75em;//12px
+$h1-font-size: 2em;//32px
+$h2-font-size: 1.75em;//28px
+$h3-font-size: 1.5em;//24p
+$h4-font-size: 1.375em;//22px
+$h5-font-size: 1.25em;//20px
+$h6-font-size: 1.125em;//18px
+/*$h1-line-height: $base-line-height / $h1-font-size;
+$h2-line-height: $base-line-height / $h2-font-size;
+$h3-line-height: $base-line-height / $h3-font-size;
+$h4-line-height: $base-line-height / $h4-font-size;
+$h5-line-height: $base-line-height / $h5-font-size;
+$h6-line-height: $base-line-height / $h6-font-size;*/
+
+//width,gutter
+$container-width: 75%;
+$container-gutter: 20%;
+$sidenav-width: (100 - $container-width); 
+$sidenav-gutter: 0%;
+$header-footer-gutter: 15%;//$container-width * $container-gutter
+$blog-container-width: 80%; 
+$blog-container-gutter: $header-footer-gutter;
+$increament: 7%;

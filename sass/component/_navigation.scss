@@ -1,8 +1,9 @@
 /**navigation*/
 .navigation{
-	padding: 1.25em 0;
+	padding: 1em 0;
 	ul{
-		float: left;		
+		float: left;
+		margin-left: $header-footer-gutter;		
 	}
 	li{
 		margin: 0;

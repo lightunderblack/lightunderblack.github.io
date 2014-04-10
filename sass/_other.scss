@@ -15,9 +15,16 @@
 @import "component/footer";
 
 .article-wrapper{
-	width: 80%;
+	float: left;
+	width: $container-width + $increament;		
 }
-.article{
-	padding: 14px 2.60416666666667%;	
+.articles{
+	color: $font-color;
+	margin-left: $container-width * $container-gutter / ($container-width + $increament);
+	@include border-radius(6px);
+	@include box-shadow(1px 0px 30px 1px #555, -1px 0px 30px 1px #555);
+	background: $article-wrapper-bg-color;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;		
 }
 

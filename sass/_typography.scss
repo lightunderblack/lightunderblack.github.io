@@ -1,34 +1,38 @@
-@import "compass/typography";
+/*@import "compass/typography";
 
-@include establish-baseline;
+@include establish-baseline;*/
 
 h1{
-	@include adjust-font-size-to(32px);
+	font-size: $h1-font-size;//32px
+	//line-height: $h1-line-height;
 }
 
 h2{
-	@include adjust-font-size-to(28px);
+	font-size: $h2-font-size;//28px
+	//line-height: $h2-line-height;
 }
 
 h3{
-	@include adjust-font-size-to(24px);
+	font-size: $h3-font-size;//24p
+	//line-height: $h3-line-height;
 }
 
 h4{
-	@include adjust-font-size-to(22px);
+	font-size: $h4-font-size;//22px
+	//line-height: $h4-line-height;
 }
 
 h5{
-	@include adjust-font-size-to(20px);
+	font-size: $h5-font-size;//20px
+	//line-height: $h5-line-height;
 }
 
 h6{
-	@include adjust-font-size-to(18px);
+	font-size: $h6-font-size;//18px
+	//line-height: $h6-line-height;
 }
 
 p, li, .highlight{
-	@include leader;
-	@include trailer;
 	line-height: 1.8em;
 }
 

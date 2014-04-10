@@ -3,25 +3,20 @@ html{
 }
 
 body{
+	font-size: 100%;//default font size 16px
     min-height: 100%;
     position: relative;
-    font-size: $base-font-size;
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: $body-bg-color;  
 }
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
-    color: #555;
+    color: $xxlight-dark;
 }
 
 .home #home, .archives #archives, .tags #tags, .blog #blog, .about #about, .contact #contact{
 	@extend %active;
-}
-
-.wrapper, .footer{
-	width: 960px;
-	margin: 0 auto;
 }
 
 .wrapper{
@@ -39,13 +34,8 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0;
 }
 
-.article-wrapper{
-	color: $font-color;
-	@include border-radius(6px);
-	@include box-shadow(1px 0px 30px 1px #555, -1px 0px 30px 1px #555);
-	background: $article-wrapper-bg-color;
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;	
+.article{
+	padding: 14px 20px;	
 }
 
 /**clear float*/
@@ -73,10 +63,10 @@ h1, h2, h3, h4, h5, h6{
     line-height: 1.2em;
 	position: fixed;
 	text-decoration: none;
-	background-color: #222;
+	background-color: $light-dark;
 	@extend %border-radius;
 	@include transition(all .3s ease-in-out);
 	&:hover{
-		background-color: #000;	
+		background-color: $dark;	
 	}
 }

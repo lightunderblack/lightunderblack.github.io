@@ -9,10 +9,10 @@
 	<link rel="stylesheet" href="/css/post.css">	
 </head>
 <body class="{{page.activePage}}">
-	<div class="wrapper">
-		{%include header.html%}
-		<div class="container clearfix">
-			<div class="article-wrapper">
+	{%include header.html%}
+	<div class="wrapper clearfix">
+		<div class="article-wrapper">
+			<div class="articles">
 				<h1>{{page.title}}</h1>
 				<p class="time-tag">
 					<span class="time">{{page.date|date:"%Y年%m月%d日"}}</span>
@@ -24,9 +24,9 @@
 				<!--文章内容-->
 				{{content}}
 				<!--留言板-->
-				{%include comment.html%}				
-			</div>			
-		</div>
+				{%include comment.html%}					
+			</div>
+		</div>			
 		<a class="go2Top" href="javascript:void(0)">返回顶部</a>
 	</div>
 	{%include footer.html%}					

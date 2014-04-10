@@ -1,22 +1,25 @@
 @import 'other';
-
 .archives-list{
+	margin: 0;
 	padding-left: 40px;	
+	li{
+		margin: .4em 0;
+	}
 	p{
 		margin: 0;
 		line-height: 1em;
 	}
 	h5{
-		color: #660;
 		margin-left: -42px;
+		color: $emphasize-font;
 	}
 	a{
-		color: #666;
 		font-weight: bold;
 		text-decoration: none;
+		color: $xxxlight-dark;
 		@include transition(color .2s ease-in-out);
 		&:hover{
-			color: #222;
+			color: $light-dark;
 		}
 	}
 	.time-tag{
@@ -25,6 +28,6 @@
 }
 .article{
 	h5{
-		color: #660;
+		color: $emphasize-font;
 	}	
 }

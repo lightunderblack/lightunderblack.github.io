@@ -10,7 +10,7 @@
 
 %time-tag{
 	margin: 0;
-	font-size: 12px;
+	font-size: $xxsmall-font-size;
 	color: $article-content-color;	
 	.tag-label{
 		padding-left: 10px;	
@@ -19,11 +19,11 @@
 		padding-right: 4px;
 	}
 	a{
-		color: #AAA;
+		color: $gray;
 		text-decoration: underline;
 		@include transition(color .2s ease-in-out);
 		&:hover{
-			color: #000;		
+			color: $dark;		
 		}
 	}	
 }
