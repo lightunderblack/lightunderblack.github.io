@@ -34,9 +34,17 @@
 			$.each(tags||[], function(i, n){
 				map[n] = map[n] ? map[n] + 1 : 1;
 			});
+			tags = [];
 			for(var tag in map){
-				html.push('<li><a href="/tag/'+tag+'">'+tag+'</a></li>');
+				tags.push(tag);
 			}
+			$.each(tags.sort(function(a, b){
+				a = a.toLowerCase();
+				b = b.toLowerCase();
+				return a > b ? 1 : ((a == b) ? 0 : -1);
+			}), function(i, tag){
+				html.push('<li><a href="/tag/'+tag+'">'+tag+'</a></li>');
+			});
 			tagsList.html(html.join('')).show();
 		});
 	})(jQuery);

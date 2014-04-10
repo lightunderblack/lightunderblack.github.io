@@ -30,18 +30,29 @@ activePage: tags
       var map = {};
       var target = tagsList;
       $.each(tags||[], function(i, n){
-        map[n] = $.trim(n||'').replace(/\s+/, '_');
+        map[n] = $.trim(n || '').replace(/\s+/, '_');
       });
+      tags = [];
       for(var i in map){
-        tag = map[i];
+        tags.push({
+          id: i,
+          value: map[i]
+        });  
+      }
+      $.each(tags.sort(function(a, b){
+        a = a.id.toLowerCase();
+        b = b.id.toLowerCase();
+        return (a > b) ? 1 : (a === b ? 0 : -1);
+      }), function(i, tag){
+        var id = tag.id, value = tag.value;
         html = [
-        '<h5 id="', tag, '"><em>', i, '</em></h5>',
-        '<ul class="archives-list" id="', tag, '_list"></ul>'
+        '<h5 id="', value, '"><em>', id, '</em></h5>',
+        '<ul class="archives-list" id="', value, '_list"></ul>'
         ];
         $(html.join('')).insertAfter(target);
-        target = $('#'+tag+'_list');
-        target.append(tagsList.children('li[data-tag="'+i+'"]').clone());
-      }
+        target = $('#'+value+'_list');
+        target.append(tagsList.children('li[data-tag="'+id+'"]').clone());        
+      });
       tagsList.remove();
       tagsList = null;       
     });
