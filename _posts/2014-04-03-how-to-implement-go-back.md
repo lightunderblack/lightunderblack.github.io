@@ -20,6 +20,7 @@ tags: ["JavaScript", "CSS3"]
 {%endhighlight%}
 
 利用浏览器**a**标签定位锚点功能，可以容易实现返回顶部，但滚动条滚动过程中并不平滑。
+<!--more-->
 
 #####2. 使用*DOM*的*scrollIntoView*方法#####
 

@@ -21,7 +21,7 @@ tags: ["HTML"]
 	+ 设定为*follow*：页面上的链接可以被查询
 	+ 设定为*noindex*：文件将不被检索，但页面上的链接可以被查询
 	+ 设定为*nofollow*：文件将不被检索，页面上的链接可以被查询
-
+<!--more-->
 #####http-equiv属性#####
 
 1. `<meta http-equiv="Content-Type" contect="text/html";charset=gb_2312-80">`和 `<meta http-equiv="Content-Language" contect="zh-CN">`用以说明主页制作所使用的文字以及语言；又如英文是*ISO-8859-1*字符集，还有*BIG5*、*utf-8*、*shift-Jis*、*Euc*、*Koi8-2*等字符集

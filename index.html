@@ -5,7 +5,7 @@ activePage: blog
 {%for post in paginator.posts%}
 <article class="article">
 	<header class="article-header">
-		<h5 class="title"><a href="{{post.url}}">{{post.title}}</a></h5>
+		<h2 class="title"><a href="{{post.url}}">{{post.title}}</a></h2>
     	<p class="time-tag">
     		<span class="time">{{post.date|date:"%Y-%m-%d"}}</span>
     		<span class="tag-label">标签:</span>
@@ -15,8 +15,12 @@ activePage: blog
     	</p>				
 	</header>
 	<div class="article-content">
-		{{post.excerpt}}
-		<a class="read-all" href="{{post.url}}" target="_self">阅读全文</a>
+	{% if post.content contains '<!--more-->' %}
+	    {{ post.content | split:'<!--more-->' | first }}
+	{% else %}
+	    {{ post.excerpt }}
+	{% endif %}	
+	<a class="pink-btn" href="{{post.url}}">阅读全文</a>
 	</div>
 </article>
 {%endfor%}

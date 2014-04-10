@@ -24,6 +24,14 @@ h1, h2, h3, h4, h5, h6{
 	padding-bottom: 4em;
 }
 
+.articles{
+	color: $font-color;
+	margin-left: $container-gutter;
+	background: $article-wrapper-bg-color;
+	border: 1px solid $border-color;
+	border-top-color: transparent;	
+}
+
 .navigation ul, .footer-wrapper ul{
 	margin: 0;
 	padding: 0;
@@ -35,7 +43,17 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .article{
-	padding: 14px 20px;	
+	padding: 36px 30px;	
+}
+
+.image-container{
+	text-align: center;
+	padding: 25px 35px;
+	background: $body-bg-color;
+	border: 1px solid $border-color;	
+	img{
+		max-width: 100%;
+	}
 }
 
 /**clear float*/

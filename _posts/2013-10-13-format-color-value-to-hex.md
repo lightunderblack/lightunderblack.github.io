@@ -28,6 +28,7 @@ function toHex(color) {
 	return "#000000".slice(0, 7 - value.length) + value;
 };
 {%endhighlight%}
+<!--more-->
 
 还需对支持*getComputedStyle*返回结果为*RGB*/*RGBA*形式的颜色值转换为十六进制，结合*DE*的代码，以兼容各大浏览器。
 

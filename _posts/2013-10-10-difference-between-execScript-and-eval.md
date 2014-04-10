@@ -27,6 +27,7 @@ eval('var global = "global";');//全局作用域内调用eval,则var global = "g
 console.log(global);//输出global
 console.log(local);//报错,提示local为声明,因为local是局部变量,外部无法访问
 {%endhighlight%}
+<!--more-->
 
 #####再看*execScript*例子：#####
 

@@ -28,3 +28,4 @@ function add(){
 alert(add(1)(2)(3)(4));
 alert(add(1,2,3,4,5)(6,7)(8)(9));
 {%endhighlight%}
+<!--more-->

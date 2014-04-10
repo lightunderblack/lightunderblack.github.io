@@ -3,15 +3,13 @@
 }
 
 %active{
-	@extend %border-radius;
-	color: $navigation-hover-color;	
-	background-color: $footer-header-bg-color;	
+	color: $navigation-hover-color;		
 }
 
 %time-tag{
 	margin: 0;
+	color: $gray;	
 	font-size: $xxsmall-font-size;
-	color: $article-content-color;	
 	.tag-label{
 		padding-left: 10px;	
 	}
@@ -23,7 +21,7 @@
 		text-decoration: underline;
 		@include transition(color .2s ease-in-out);
 		&:hover{
-			color: $dark;		
+			color: #CA1A89;		
 		}
 	}	
 }
@@ -32,7 +30,29 @@
 	a{
 		text-decoration: none;
 		&:hover{
+			color: $tag-color;
 			text-decoration: underline;
 		}
 	}	
+}
+
+@mixin pink-btn($border-radius:2px){
+	.pink-btn, .pink-btn:hover{
+		color: #FFF !important;
+		text-decoration: none !important;		
+	}
+	.pink-btn{
+		margin-top: 1.2em;
+		font-weight: bold;
+		padding: .6em .8em;
+		background: #DF481A;
+		display: inline-block;
+		@include border-radius($border-radius);
+		@include background-image(linear-gradient(top, #DF481A, #D12A0C));
+		&:hover{
+			background: darken(#DF481A, 5%);
+			@include background-image(linear-gradient(top, darken(#DF481A, 5%), darken(#D12A0C, 1%)));
+		}		
+	}
+	
 }

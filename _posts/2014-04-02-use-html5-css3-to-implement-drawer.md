@@ -1,14 +1,15 @@
 ---
 layout: post
 comments: true
-title: html5+css3实现抽屉菜单
+title: HTML5+CSS3实现抽屉菜单
 activePage: blogItem
 tags: ["JavaScript", "HTML5", "CSS3"]
 ---
 
 抽屉菜单在手机*native*应用中很常见。比如下图酷狗手机版界面。左侧为操作菜单，默认不显示。需要时向右滑动界面，操作菜单将从左侧缓缓显示；不需要时向左滑动界面，操作菜单将隐藏在左侧边。操作菜单这种缓入缓出的用户体验非常不错。这里讲采用*css3*实现上述抽屉菜单效果。
 
-![抽屉菜单示例图](/images/drawer_1.jpg)
+<p class="image-container"><img src="/images/drawer_1.jpg" alt="抽屉菜单示例图" /></p>
+<!--more-->
 
 *(以下实例请在基于webkit手机浏览器下访问)*
 

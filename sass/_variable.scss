@@ -8,18 +8,22 @@ $xxxlight-dark: #666;
 $emphasize-font: #660;
 
 $gray: #AAA;
+$xgray: #E0E0E0;
 
 $font-color: $xxlight-dark;
-$navigation-color: $light-dark;
+$navigation-color: #F9F9F9;
 $side-nav-title-color: $light-dark; 
-$footer-header-bg-color: $light-dark;
-$body-bg-color: #A2A749;
-$border-bottom-color: #E2E2E2;
-$navigation-hover-color: #FFF;
+$footer-header-bg-color: #F9F9F9;
+$body-bg-color: #F6F6F6;
+$navigation-bg-color: $light-dark;
+$border-color: #E0E0E0;
+$navigation-hover-color: #4ECDC4;
 $article-content-color: #AAA;
-$article-wrapper-bg-color: #F5F5D5;
+$article-wrapper-bg-color: #FFF;
 $side-nav-link-color: $emphasize-font;
-$side-nav-link-hover-color: $dark;  
+$side-nav-link-hover-color: $dark; 
+
+$tag-color: #F58220; 
 
 //font size, line-height
 $base-font-size: 1em;//default font size 16px

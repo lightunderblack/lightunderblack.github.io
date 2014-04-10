@@ -33,7 +33,7 @@ jQuery性能最佳实践
 	 
 	/*以上写法最快的是$parent.find('.child'),最慢的是$('#parent .child')*/
 	{%endhighlight%}
-
+<!--more-->
 #####4、不要过度使用*jQuery*
 
 *jQuery*速度再快，也无法于原生的*JavaScript*方法快。如果情况允许尽量使用*JavaScript*原生方法。

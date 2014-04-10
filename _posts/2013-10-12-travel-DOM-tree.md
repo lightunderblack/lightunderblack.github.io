@@ -45,4 +45,5 @@ function getElementsByTagName(node, tagName){
     return result;
 }
 {%endhighlight%}
+<!--more-->
 

@@ -13,6 +13,7 @@ tags: ["JavaScript", "RegExp"]
 {%highlight javascript linenos%}
 'ddssssaaaadkslsls'.replace(/(\w+?)(?:\1+)/g, '$1');//运行结果为dsadksls
 {%endhighlight%}
+<!--more-->
 
 这里涉及到正则表达式的知识点有：*分组*、*反向引用*、*非捕获分组*、*懒惰匹配*、*全局模式*。对于具体知识点描述，本文不会在此赘述，详细请翻阅*《JavaScript权威指南》*正则表达式一章。
 

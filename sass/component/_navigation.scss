@@ -1,6 +1,7 @@
 /**navigation*/
 .navigation{
 	padding: 1em 0;
+	background: $light-dark;
 	ul{
 		float: left;
 		margin-left: $header-footer-gutter;		
@@ -21,7 +22,8 @@
 		color: $navigation-color;
 		@include transition(all .3s ease-in-out);
 		&:hover{
-			@extend %active;	
+			@extend %active;
+			@include text-shadow(rgba($navigation-hover-color, .4) 1px 1px 0);	
 		}		
 	}
 }

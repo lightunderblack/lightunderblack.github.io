@@ -33,7 +33,7 @@ tags: ["JavaScript"]
 	第一个参数必须:*id*为需要触发*scroll*事件的元素*id*。当传入的参数是*window*时,则*scroll*事件绑定在*window*上
 
 	第二个参数可选:*scroll*事件触发的回调函数,需用户自行实现。
-
+<!--more-->
 
 #####4、使用#####
 

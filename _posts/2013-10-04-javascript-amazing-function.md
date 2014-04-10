@@ -21,6 +21,7 @@ Function.constructor === Function;//true
 {%endhighlight%}
 
 按上面等式得知：对象*Function*是构造函数*Function*的实例!
+<!--more-->
 
 对象会继承它的构造函数的*prototype*属性所包含方法/属性，即对象可以访问到它的原型对象里方法/属性，那么
 

@@ -4,26 +4,25 @@
 	padding: .8em 0;
 	text-align: center;
 	a{
-		color: #660;
 		width: 2.5em;
 		height: 2.5em;		
 		margin: 0 0.25em;
+		color: $light-dark;
 		font-weight: bold;
 		line-height: 2.5em;
-		background-color: #FFF;
 		display: inline-block;
 		text-decoration: none;
-		border: 1px solid #AAA;	
-		@extend %border-radius;
+		border: 1px solid transparent;
 		@include transition(background-color .2s ease-in-out);
 		&:hover{
-			color: #FFF;
-			background-color: #222; 	
+			color: $tag-color;
+			border-color: $border-color;
+			background-color: $body-bg-color; 
 		}	
 	}
 	.current{
-		color: #FFF;
 		cursor: default;
-		background-color: #222;
+		border-color: $border-color;
+		background-color: $body-bg-color;
 	}	
 }

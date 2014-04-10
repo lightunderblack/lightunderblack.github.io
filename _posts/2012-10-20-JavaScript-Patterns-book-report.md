@@ -24,3 +24,4 @@ tags: ["JavaScript", "JavaScript Patterns"]
 14. *Self-Defining Functions*
 15. *Immediate Functions*
 16. *Image Beacon*
+17. <!--more-->
