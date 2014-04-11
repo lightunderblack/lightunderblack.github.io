@@ -25,14 +25,7 @@
 			color: #FFF;
 			background: #BABABA;
 		}
-	}
-	/*a{
-		color: $gray;
-		@include transition(color .2s ease-in-out);
-		&:hover{
-			color: #CA1A89;		
-		}
-	}*/	
+	}	
 }
 
 %title-hover{
@@ -45,7 +38,7 @@
 	}	
 }
 
-@mixin pink-btn($border-radius:2px){
+@mixin pink-btn($border-radius:2px, $padding: .6em .8em){
 	.pink-btn, .pink-btn:hover{
 		color: #FFF !important;
 		text-decoration: none !important;		
@@ -53,15 +46,14 @@
 	.pink-btn{
 		margin-top: 1.2em;
 		font-weight: bold;
-		padding: .6em .8em;
+		padding: $padding;
 		background: #DF481A;
 		display: inline-block;
-		/*@include border-radius($border-radius);*/
+		@include border-radius(2px);
 		@include background-image(linear-gradient(top, #DF481A, #D12A0C));
 		&:hover{
 			background: darken(#DF481A, 5%);
 			@include background-image(linear-gradient(top, darken(#DF481A, 5%), darken(#D12A0C, 1%)));
 		}		
 	}
-	
 }

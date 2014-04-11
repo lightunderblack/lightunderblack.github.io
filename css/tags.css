@@ -567,13 +567,6 @@ table {
   margin-top: 8px;
   color: #aaaaaa;
   font-size: 0.75em;
-  /*a{
-  	color: $gray;
-  	@include transition(color .2s ease-in-out);
-  	&:hover{
-  		color: #CA1A89;		
-  	}
-  }*/
 }
 /* line 13, ../sass/_class.scss */
 .archives-list .time-tag .tag-label {
@@ -1553,13 +1546,25 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
+/* line 60, ../sass/_common.scss */
+.search-box {
+  width: 9em;
+  padding: 3px 2px;
+}
+
+/* line 65, ../sass/_common.scss */
+.search-btn {
+  margin: 0 !important;
+  padding: 1px 4px !important;
+}
+
 /**clear float*/
-/* line 61, ../sass/_common.scss */
+/* line 71, ../sass/_common.scss */
 .clearfix {
   *zoom: 1;
   /**fix IE6-7*/
 }
-/* line 63, ../sass/_common.scss */
+/* line 73, ../sass/_common.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -1570,7 +1575,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**go to top button*/
-/* line 74, ../sass/_common.scss */
+/* line 84, ../sass/_common.scss */
 .go2Top {
   left: 86%;
   z-index: 2;
@@ -1588,7 +1593,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 88, ../sass/_common.scss */
+/* line 98, ../sass/_common.scss */
 .go2Top:hover {
   background-color: black;
 }
@@ -1599,7 +1604,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 3, ../sass/component/_sidenav.scss */
 .sidenav h5 {
-  color: #222222;
+  color: #f58220;
 }
 /* line 6, ../sass/component/_sidenav.scss */
 .sidenav ul, .sidenav li {
@@ -1623,6 +1628,19 @@ h1, h2, h3, h4, h5, h6 {
 /* line 18, ../sass/component/_sidenav.scss */
 .sidenav a:hover {
   color: black;
+}
+/* line 23, ../sass/component/_sidenav.scss */
+.sidenav .search-box {
+  width: 9em;
+  margin-right: 4px;
+  padding: 4px 2px;
+}
+/* line 29, ../sass/component/_sidenav.scss */
+.sidenav .search-btn {
+  bottom: 1px;
+  position: relative;
+  font-size: 1em;
+  padding: 2px 6px !important;
 }
 
 /**navigation*/

@@ -1,7 +1,7 @@
 .sidenav{
 	padding: 14px 0 0 16px;
 	h5{
-		color: $side-nav-title-color;
+		color: $tag-color;
 	}
 	ul, li{
 		margin: 0;
@@ -19,4 +19,17 @@
 			color: $side-nav-link-hover-color;
 		}
 	}
+
+	.search-box{
+		width: 9em;
+		margin-right: 4px;
+		padding: 4px 2px;
+	}
+
+	.search-btn{
+		bottom: 1px;
+		position: relative;
+		font-size: $base-font-size;
+		padding: 2px 6px !important;
+	}	
 }

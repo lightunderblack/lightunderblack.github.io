@@ -57,6 +57,16 @@ h1, h2, h3, h4, h5, h6{
 	}
 }
 
+.search-box{
+	width: 9em;
+	padding: 3px 2px;
+}
+
+.search-btn{
+	margin: 0 !important;;
+	padding: 1px 4px !important;
+}
+
 /**clear float*/
 .clearfix{
 	*zoom: 1;/**fix IE6-7*/
