@@ -7,23 +7,32 @@
 }
 
 %time-tag{
-	margin: 0;
+	margin-top: 8px;
 	color: $gray;	
 	font-size: $xxsmall-font-size;
 	.tag-label{
 		padding-left: 10px;	
+		color: $xxlight-dark;
 	}
 	.tag{
-		padding-right: 4px;
+		color: #999;
+		padding: 4px;
+		background: #EEE;
+		margin-right: 4px;
+		text-decoration: none;
+		@include transition(all .2s ease-in-out);
+		&:hover{
+			color: #FFF;
+			background: #BABABA;
+		}
 	}
-	a{
+	/*a{
 		color: $gray;
-		text-decoration: underline;
 		@include transition(color .2s ease-in-out);
 		&:hover{
 			color: #CA1A89;		
 		}
-	}	
+	}*/	
 }
 
 %title-hover{
@@ -47,7 +56,7 @@
 		padding: .6em .8em;
 		background: #DF481A;
 		display: inline-block;
-		@include border-radius($border-radius);
+		/*@include border-radius($border-radius);*/
 		@include background-image(linear-gradient(top, #DF481A, #D12A0C));
 		&:hover{
 			background: darken(#DF481A, 5%);

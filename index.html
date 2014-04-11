@@ -7,7 +7,7 @@ activePage: blog
 	<header class="article-header">
 		<h2 class="title"><a href="{{post.url}}">{{post.title}}</a></h2>
     	<p class="time-tag">
-    		<span class="time">{{post.date|date:"%Y-%m-%d"}}</span>
+    		<time datetime="{{post.date|date:'%Y-%m-%d'}}">{{post.date|date:"%Y年%m月%d日"}}</time>
     		<span class="tag-label">标签:</span>
     		{% for tag in post.tags %}
     		<a class="tag" href="/tags/index.html#{{ tag | replace:' ', '_' }}">{{ tag }}</a>	

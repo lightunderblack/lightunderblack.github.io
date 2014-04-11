@@ -14,20 +14,20 @@
 @import "component/footer";
 
 .blogItem .article-wrapper{
-	width: 1 - $blog-container-gutter;
-	margin-left: $blog-container-gutter;		
+	width: $container-width;
 }
 
 .blogItem {
 	.articles{
 		color: $font-color;
-		margin-right: 18%;
-		padding: 14px 20px;
+		padding: 36px 30px;		
+		margin-left: $container-gutter;		
+		/*
 		@include border-radius(6px);
 		@include box-shadow(1px 0px 30px 1px #555, -1px 0px 30px 1px #555);
 		background: $article-wrapper-bg-color;
 		border-top: 1px solid transparent;
-		border-bottom: 1px solid transparent;		
+		border-bottom: 1px solid transparent;*/		
 	}	
 	.time-tag{
 		@extend %time-tag;

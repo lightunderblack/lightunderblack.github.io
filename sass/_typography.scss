@@ -4,32 +4,32 @@
 
 h1{
 	font-size: $h1-font-size;//32px
-	//line-height: $h1-line-height;
+	margin: $h1-line-height 0;
 }
 
 h2{
 	font-size: $h2-font-size;//28px
-	//line-height: $h2-line-height;
+	margin: $h2-line-height 0;
 }
 
 h3{
 	font-size: $h3-font-size;//24p
-	//line-height: $h3-line-height;
+	margin: $h3-line-height 0;
 }
 
 h4{
 	font-size: $h4-font-size;//22px
-	//line-height: $h4-line-height;
+	margin: $h4-line-height 0;
 }
 
 h5{
 	font-size: $h5-font-size;//20px
-	//line-height: $h5-line-height;
+	margin: $h5-line-height 0;
 }
 
 h6{
 	font-size: $h6-font-size;//18px
-	//line-height: $h6-line-height;
+	margin: $h6-line-height 0;
 }
 
 p, li, .highlight{
