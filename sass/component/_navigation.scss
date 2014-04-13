@@ -1,6 +1,4 @@
-/**navigation*/
 .navigation{
-	padding: 1em 0;
 	background: $light-dark;
 	ul{
 		float: left;
@@ -11,19 +9,34 @@
 		float: left;
 		margin-right: .6em;
 	}
+	.fa{
+		margin-right: 8px;
+	}
 	a{
-		height: 2em;
+		height: 1.4em;
 		width: 3.8em;
-		line-height: 2em;
 		display: block;
 		font-weight: bold;
+		line-height: 1.4em;
 		text-align: center;
 		text-decoration: none;
 		color: $navigation-color;
-		@include transition(all .3s ease-in-out);
+		@include transition(color .3s ease-in-out);
 		&:hover{
 			@extend %active;
 			@include text-shadow(rgba($navigation-hover-color, .4) 1px 1px 0);	
+		}		
+	}
+	.menu{
+		display: none;
+		float: right;
+		height: 52px;
+		line-height: 52px;
+		span{
+			width: 28px;
+			height: 28px;
+			display: block;
+			background: url(../images/img.png) 0px -5px no-repeat;
 		}		
 	}
 }

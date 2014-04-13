@@ -1,33 +1,22 @@
 @import 'other';
 .archives-list{
-	margin: 0;
-	padding-left: 40px;	
-	li{
-		margin: .4em 0;
-	}
-	p{
-		margin: 0;
-		line-height: 1em;
-	}
-	h5{
-		margin-left: -42px;
-		color: $emphasize-font;
+	padding-left: 20px;
+	list-style: none;
+	h4{
+		color: $tag-color;
+		margin-top: 0;	
+		margin-left: -20px;	
 	}
 	a{
-		font-weight: bold;
 		text-decoration: none;
-		color: $xxxlight-dark;
 		@include transition(color .2s ease-in-out);
 		&:hover{
-			color: $light-dark;
+			color: $tag-color;
+			text-decoration: underline;
 		}
 	}
-	.time-tag{
-		@extend %time-tag;
-	}	
 }
-.article{
-	h5{
-		color: $emphasize-font;
-	}	
+
+.article .time-tag{
+	margin-top: -8px;
 }

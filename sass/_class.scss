@@ -20,6 +20,7 @@
 		background: #EEE;
 		margin-right: 4px;
 		text-decoration: none;
+		@extend %border-radius;
 		@include transition(all .2s ease-in-out);
 		&:hover{
 			color: #FFF;
@@ -49,7 +50,7 @@
 		padding: $padding;
 		background: #DF481A;
 		display: inline-block;
-		@include border-radius(2px);
+		@extend %border-radius;
 		@include background-image(linear-gradient(top, #DF481A, #D12A0C));
 		&:hover{
 			background: darken(#DF481A, 5%);

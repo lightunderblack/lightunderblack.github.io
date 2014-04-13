@@ -1,6 +1,9 @@
 <div class="sidenav">
-	<p><input type="text" class="search-box"><a class="pink-btn search-btn" href="#">search</a></p>
-	<h5>归档</h5>
+	<!--<p class="search-box-wrapper">
+		<input type="text" />
+		<a class="pink-btn search-btn" href="javascript">search</a>
+	</p>-->
+	<h4><i class="fa fa-archive"></i>归档</h4>
 	<ul>
 	  {% for post in site.posts %}
 	    {% unless post.next %}
@@ -14,20 +17,24 @@
 	    {% endunless %}
 	  {% endfor %}
 	</ul>
-	<h5>标签</h5>
-	<ul id="tag-list" style="display:none;">
+	<h4><i class="fa fa-tags"></i>标签</h4>
+	<div id="tag-cloud" style="display:none;" class="clearfix">
 		{% for post in site.posts %}
 			{% for tag in post.tags %}
-			   <li>{{tag}}</li>
+			   <span>{{tag}}</span>
 			{% endfor %}
 		{% endfor %}	
-	</ul>		
+	</div>		
 </div>
 <script type="text/javascript">
 	(function($){
+		$.fn.tagcloud.defaults = {
+		  size: {start: 12, end: 28, unit: 'px'},
+		  color: {start: '#333', end: '#AAA'}
+		};		
 		$(function(){
 			var html = [];
-			var tagsList = $('#tag-list');
+			var tagsList = $('#tag-cloud');
 			var tags = tagsList.children().map(function(){
 				return $(this).text();
 			});
@@ -44,9 +51,10 @@
 				b = b.toLowerCase();
 				return a > b ? 1 : ((a == b) ? 0 : -1);
 			}), function(i, tag){
-				html.push('<li><a href="/tag/'+tag+'">'+tag+'</a></li>');
+				html.push('<a href="/tag/'+tag+'" rel="'+(1+Math.random()*0.2)+'">'+tag+'</a>');
 			});
 			tagsList.html(html.join('')).show();
+			$('#tag-cloud a').tagcloud();
 		});
 	})(jQuery);
 </script>

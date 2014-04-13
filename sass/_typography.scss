@@ -1,8 +1,8 @@
-/*@import "compass/typography";
+@import "compass/typography";
 
-@include establish-baseline;*/
+@include establish-baseline;
 
-h1{
+/*h1{
 	font-size: $h1-font-size;//32px
 	margin: $h1-line-height 0;
 }
@@ -30,10 +30,35 @@ h5{
 h6{
 	font-size: $h6-font-size;//18px
 	margin: $h6-line-height 0;
+}*/
+
+h1{
+	@include adjust-font-size-to(32px);
+}
+h2{
+	@include adjust-font-size-to(28px);
+}
+h3{
+	@include adjust-font-size-to(24px);
+}
+h4{
+	@include adjust-font-size-to(20px);
+}
+h5{
+	@include adjust-font-size-to(18px);
 }
 
 p, li, .highlight{
 	line-height: 1.8em;
+}
+
+p, pre, li{
+	@include leader;
+	@include trailer;
+}
+
+dl, menu, ol, ul{
+	margin: 0;
 }
 
 

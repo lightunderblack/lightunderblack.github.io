@@ -1,24 +1,2 @@
-@charset "utf-8";
-@import "compass/css3";
-
-@import "reset";
-@import "variable";
-@import "class";
-
-@import "syntax";
-@import "typography";
-
-@import "common";
-@import "component/sidenav";
-@import "component/navigation";
-@import "component/pagination";
-@import "component/footer";
-
-.article-wrapper{
-	float: left;
-	width: $container-width + $increament;		
-}
-.articles{
-	margin-left: $container-width * $container-gutter / ($container-width + $increament);		
-}
+@import "home";
 

@@ -1,11 +1,19 @@
-<script src="/javascript/jquery-1.10.2.js"></script>	
+<script src="/javascript/lib/jquery-1.10.2.js"></script>
+<script src="/javascript/lib/jquery.tagcloud.js"></script>	
 <script src="/javascript/smoothscroll.js"></script>
 <header class="navigation clearfix">
 	<ul>
-		<li><h4><a id="blog" href="{{site.url}}/">首页</a></h4></li>
-		<!--<li><h4><a id="archives" href="{{site.url}}/archives">归档</a></h4></li>
-		<li><h4><a id="tags" href="{{site.url}}/tags">标签</a></h4></li>-->
-		<li><h4><a id="about" href="{{site.url}}/about/me.html">关于</a></h4></li>
-		<li><h4><a id="contact" href="{{site.url}}/contact">联系</a></h4></li>
+		<li>
+			<h4><a id="blog" href="{{site.url}}/"><i class="fa fa-home"></i>首页</a></h4>
+		</li>
+		<li>
+			<h4><a id="about" href="{{site.url}}/about/me.html"><i class="fa fa-info-circle"></i>关于</a></h4>
+		</li>
+		<li>
+			<h4><a id="contact" href="{{site.url}}/contact"><i class="fa fa-user"></i>联系</a></h4>
+		</li>
 	</ul>
+	<a href="javascript:void(0);" class="menu">
+		<i class="fa fa-bars"></i>
+	</a>
 </header>

@@ -1,4 +1,4 @@
-/* normalize.css v1.1.3 | MIT License | git.io/normalize */
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -548,8 +548,20 @@ table {
   border-spacing: 0;
 }
 
+/*$h1-font-size: 2em;//32px
+$h2-font-size: 1.75em;//28px
+$h3-font-size: 1.5em;//24p
+$h4-font-size: 1.375em;//22px
+$h5-font-size: 1.25em;//20px
+$h6-font-size: 1.125em;//18px
+$h1-line-height: .375em;
+$h2-line-height: .4285714285714286em;
+$h3-line-height: .5em;
+$h4-line-height: .5454545454545455em;
+$h5-line-height: .6em;
+$h6-line-height: .6666666666666667em;*/
 /* line 1, ../sass/_class.scss */
-.go2Top {
+.article .time-tag .tag, .image-container, .go2Top, .search-box-wrapper input, .pagination a, .pink-btn {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -563,18 +575,18 @@ table {
 }
 
 /* line 9, ../sass/_class.scss */
-.archives-list .time-tag {
+.article .time-tag {
   margin-top: 8px;
   color: #aaaaaa;
   font-size: 0.75em;
 }
 /* line 13, ../sass/_class.scss */
-.archives-list .time-tag .tag-label {
+.article .time-tag .tag-label {
   padding-left: 10px;
   color: #555555;
 }
 /* line 17, ../sass/_class.scss */
-.archives-list .time-tag .tag {
+.article .time-tag .tag {
   color: #999;
   padding: 4px;
   background: #EEE;
@@ -585,10 +597,20 @@ table {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 24, ../sass/_class.scss */
-.archives-list .time-tag .tag:hover {
+/* line 25, ../sass/_class.scss */
+.article .time-tag .tag:hover {
   color: #FFF;
   background: #BABABA;
+}
+
+/* line 33, ../sass/_class.scss */
+.article .article-content a, .article .title a {
+  text-decoration: none;
+}
+/* line 35, ../sass/_class.scss */
+.article .article-content a:hover, .article .title a:hover {
+  color: #f58220;
+  text-decoration: underline;
 }
 
 /* Code Highlighting */
@@ -615,6 +637,11 @@ pre, code {
   color: #555555;
   background: #f6f6f6;
   border: 1px solid #e0e0e0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   /*border-radius: 5px;
   background: #333;
   background: $body-bg-color;
@@ -622,7 +649,7 @@ pre, code {
   	rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);*/
 }
 
-/* line 31, ../sass/_syntax.scss */
+/* line 32, ../sass/_syntax.scss */
 .note code {
   background-color: rgba(0, 0, 0, 0.2);
   margin-left: 2.5px;
@@ -630,7 +657,7 @@ pre, code {
   font-size: 0.8em;
 }
 
-/* line 38, ../sass/_syntax.scss */
+/* line 39, ../sass/_syntax.scss */
 .highlight {
   padding: 10px 0;
   width: 100%;
@@ -638,797 +665,797 @@ pre, code {
 }
 
 /*.highlight{ background: #333333; color: #ffffff}*/
-/* line 45, ../sass/_syntax.scss */
+/* line 46, ../sass/_syntax.scss */
 .highlight .hll {
   background-color: #ffffcc;
 }
 
-/* line 49, ../sass/_syntax.scss */
+/* line 50, ../sass/_syntax.scss */
 pre .hll {
   background-color: #ffffcc;
 }
 
-/* line 50, ../sass/_syntax.scss */
+/* line 51, ../sass/_syntax.scss */
 pre {
   background: #f0f0f0;
 }
 
-/* line 51, ../sass/_syntax.scss */
+/* line 52, ../sass/_syntax.scss */
 pre .c {
   color: #60a0b0;
   font-style: italic;
 }
 
 /* Comment */
-/* line 52, ../sass/_syntax.scss */
+/* line 53, ../sass/_syntax.scss */
 pre .err {
   border: 1px solid red;
 }
 
 /* Error */
-/* line 53, ../sass/_syntax.scss */
+/* line 54, ../sass/_syntax.scss */
 pre .k {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword */
-/* line 54, ../sass/_syntax.scss */
+/* line 55, ../sass/_syntax.scss */
 pre .o {
   color: #666666;
 }
 
 /* Operator */
-/* line 55, ../sass/_syntax.scss */
+/* line 56, ../sass/_syntax.scss */
 pre .cm {
   color: #60a0b0;
   font-style: italic;
 }
 
 /* Comment.Multiline */
-/* line 56, ../sass/_syntax.scss */
+/* line 57, ../sass/_syntax.scss */
 pre .cp {
   color: #007020;
 }
 
 /* Comment.Preproc */
-/* line 57, ../sass/_syntax.scss */
+/* line 58, ../sass/_syntax.scss */
 pre .c1 {
   color: #60a0b0;
   font-style: italic;
 }
 
 /* Comment.Single */
-/* line 58, ../sass/_syntax.scss */
+/* line 59, ../sass/_syntax.scss */
 pre .cs {
   color: #60a0b0;
   background-color: #fff0f0;
 }
 
 /* Comment.Special */
-/* line 59, ../sass/_syntax.scss */
+/* line 60, ../sass/_syntax.scss */
 pre .gd {
   color: #a00000;
 }
 
 /* Generic.Deleted */
-/* line 60, ../sass/_syntax.scss */
+/* line 61, ../sass/_syntax.scss */
 pre .ge {
   font-style: italic;
 }
 
 /* Generic.Emph */
-/* line 61, ../sass/_syntax.scss */
+/* line 62, ../sass/_syntax.scss */
 pre .gr {
   color: red;
 }
 
 /* Generic.Error */
-/* line 62, ../sass/_syntax.scss */
+/* line 63, ../sass/_syntax.scss */
 pre .gh {
   color: #000080;
   font-weight: bold;
 }
 
 /* Generic.Heading */
-/* line 63, ../sass/_syntax.scss */
+/* line 64, ../sass/_syntax.scss */
 pre .gi {
   color: #00a000;
 }
 
 /* Generic.Inserted */
-/* line 64, ../sass/_syntax.scss */
+/* line 65, ../sass/_syntax.scss */
 pre .go {
   color: #888888;
 }
 
 /* Generic.Output */
-/* line 65, ../sass/_syntax.scss */
+/* line 66, ../sass/_syntax.scss */
 pre .gp {
   color: #c65d09;
   font-weight: bold;
 }
 
 /* Generic.Prompt */
-/* line 66, ../sass/_syntax.scss */
+/* line 67, ../sass/_syntax.scss */
 pre .gs {
   font-weight: bold;
 }
 
 /* Generic.Strong */
-/* line 67, ../sass/_syntax.scss */
+/* line 68, ../sass/_syntax.scss */
 pre .gu {
   color: #800080;
   font-weight: bold;
 }
 
 /* Generic.Subheading */
-/* line 68, ../sass/_syntax.scss */
+/* line 69, ../sass/_syntax.scss */
 pre .gt {
   color: #0044dd;
 }
 
 /* Generic.Traceback */
-/* line 69, ../sass/_syntax.scss */
+/* line 70, ../sass/_syntax.scss */
 pre .kc {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Constant */
-/* line 70, ../sass/_syntax.scss */
+/* line 71, ../sass/_syntax.scss */
 pre .kd {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Declaration */
-/* line 71, ../sass/_syntax.scss */
+/* line 72, ../sass/_syntax.scss */
 pre .kn {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Namespace */
-/* line 72, ../sass/_syntax.scss */
+/* line 73, ../sass/_syntax.scss */
 pre .kp {
   color: #007020;
 }
 
 /* Keyword.Pseudo */
-/* line 73, ../sass/_syntax.scss */
+/* line 74, ../sass/_syntax.scss */
 pre .kr {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Reserved */
-/* line 74, ../sass/_syntax.scss */
+/* line 75, ../sass/_syntax.scss */
 pre .kt {
   color: #902000;
 }
 
 /* Keyword.Type */
-/* line 75, ../sass/_syntax.scss */
+/* line 76, ../sass/_syntax.scss */
 pre .m {
   color: #40a070;
 }
 
 /* Literal.Number */
-/* line 76, ../sass/_syntax.scss */
+/* line 77, ../sass/_syntax.scss */
 pre .s {
   color: #4070a0;
 }
 
 /* Literal.String */
-/* line 77, ../sass/_syntax.scss */
+/* line 78, ../sass/_syntax.scss */
 pre .na {
   color: #4070a0;
 }
 
 /* Name.Attribute */
-/* line 78, ../sass/_syntax.scss */
+/* line 79, ../sass/_syntax.scss */
 pre .nb {
   color: #007020;
 }
 
 /* Name.Builtin */
-/* line 79, ../sass/_syntax.scss */
+/* line 80, ../sass/_syntax.scss */
 pre .nc {
   color: #0e84b5;
   font-weight: bold;
 }
 
 /* Name.Class */
-/* line 80, ../sass/_syntax.scss */
+/* line 81, ../sass/_syntax.scss */
 pre .no {
   color: #60add5;
 }
 
 /* Name.Constant */
-/* line 81, ../sass/_syntax.scss */
+/* line 82, ../sass/_syntax.scss */
 pre .nd {
   color: #555555;
   font-weight: bold;
 }
 
 /* Name.Decorator */
-/* line 82, ../sass/_syntax.scss */
+/* line 83, ../sass/_syntax.scss */
 pre .ni {
   color: #d55537;
   font-weight: bold;
 }
 
 /* Name.Entity */
-/* line 83, ../sass/_syntax.scss */
+/* line 84, ../sass/_syntax.scss */
 pre .ne {
   color: #007020;
 }
 
 /* Name.Exception */
-/* line 84, ../sass/_syntax.scss */
+/* line 85, ../sass/_syntax.scss */
 pre .nf {
   color: #06287e;
 }
 
 /* Name.Function */
-/* line 85, ../sass/_syntax.scss */
+/* line 86, ../sass/_syntax.scss */
 pre .nl {
   color: #002070;
   font-weight: bold;
 }
 
 /* Name.Label */
-/* line 86, ../sass/_syntax.scss */
+/* line 87, ../sass/_syntax.scss */
 pre .nn {
   color: #0e84b5;
   font-weight: bold;
 }
 
 /* Name.Namespace */
-/* line 87, ../sass/_syntax.scss */
+/* line 88, ../sass/_syntax.scss */
 pre .nt {
   color: #062873;
   font-weight: bold;
 }
 
 /* Name.Tag */
-/* line 88, ../sass/_syntax.scss */
+/* line 89, ../sass/_syntax.scss */
 pre .nv {
   color: #bb60d5;
 }
 
 /* Name.Variable */
-/* line 89, ../sass/_syntax.scss */
+/* line 90, ../sass/_syntax.scss */
 pre .ow {
   color: #007020;
   font-weight: bold;
 }
 
 /* Operator.Word */
-/* line 90, ../sass/_syntax.scss */
+/* line 91, ../sass/_syntax.scss */
 pre .w {
   color: #bbbbbb;
 }
 
 /* Text.Whitespace */
-/* line 91, ../sass/_syntax.scss */
+/* line 92, ../sass/_syntax.scss */
 pre .mf {
   color: #40a070;
 }
 
 /* Literal.Number.Float */
-/* line 92, ../sass/_syntax.scss */
+/* line 93, ../sass/_syntax.scss */
 pre .mh {
   color: #40a070;
 }
 
 /* Literal.Number.Hex */
-/* line 93, ../sass/_syntax.scss */
+/* line 94, ../sass/_syntax.scss */
 pre .mi {
   color: #40a070;
 }
 
 /* Literal.Number.Integer */
-/* line 94, ../sass/_syntax.scss */
+/* line 95, ../sass/_syntax.scss */
 pre .mo {
   color: #40a070;
 }
 
 /* Literal.Number.Oct */
-/* line 95, ../sass/_syntax.scss */
+/* line 96, ../sass/_syntax.scss */
 pre .sb {
   color: #4070a0;
 }
 
 /* Literal.String.Backtick */
-/* line 96, ../sass/_syntax.scss */
+/* line 97, ../sass/_syntax.scss */
 pre .sc {
   color: #4070a0;
 }
 
 /* Literal.String.Char */
-/* line 97, ../sass/_syntax.scss */
+/* line 98, ../sass/_syntax.scss */
 pre .sd {
   color: #4070a0;
   font-style: italic;
 }
 
 /* Literal.String.Doc */
-/* line 98, ../sass/_syntax.scss */
+/* line 99, ../sass/_syntax.scss */
 pre .s2 {
   color: #4070a0;
 }
 
 /* Literal.String.Double */
-/* line 99, ../sass/_syntax.scss */
+/* line 100, ../sass/_syntax.scss */
 pre .se {
   color: #4070a0;
   font-weight: bold;
 }
 
 /* Literal.String.Escape */
-/* line 100, ../sass/_syntax.scss */
+/* line 101, ../sass/_syntax.scss */
 pre .sh {
   color: #4070a0;
 }
 
 /* Literal.String.Heredoc */
-/* line 101, ../sass/_syntax.scss */
+/* line 102, ../sass/_syntax.scss */
 pre .si {
   color: #70a0d0;
   font-style: italic;
 }
 
 /* Literal.String.Interpol */
-/* line 102, ../sass/_syntax.scss */
+/* line 103, ../sass/_syntax.scss */
 pre .sx {
   color: #c65d09;
 }
 
 /* Literal.String.Other */
-/* line 103, ../sass/_syntax.scss */
+/* line 104, ../sass/_syntax.scss */
 pre .sr {
   color: #235388;
 }
 
 /* Literal.String.Regex */
-/* line 104, ../sass/_syntax.scss */
+/* line 105, ../sass/_syntax.scss */
 pre .s1 {
   color: #4070a0;
 }
 
 /* Literal.String.Single */
-/* line 105, ../sass/_syntax.scss */
+/* line 106, ../sass/_syntax.scss */
 pre .ss {
   color: #517918;
 }
 
 /* Literal.String.Symbol */
-/* line 106, ../sass/_syntax.scss */
+/* line 107, ../sass/_syntax.scss */
 pre .bp {
   color: #007020;
 }
 
 /* Name.Builtin.Pseudo */
-/* line 107, ../sass/_syntax.scss */
+/* line 108, ../sass/_syntax.scss */
 pre .vc {
   color: #bb60d5;
 }
 
 /* Name.Variable.Class */
-/* line 108, ../sass/_syntax.scss */
+/* line 109, ../sass/_syntax.scss */
 pre .vg {
   color: #bb60d5;
 }
 
 /* Name.Variable.Global */
-/* line 109, ../sass/_syntax.scss */
+/* line 110, ../sass/_syntax.scss */
 pre .vi {
   color: #bb60d5;
 }
 
 /* Name.Variable.Instance */
-/* line 110, ../sass/_syntax.scss */
+/* line 111, ../sass/_syntax.scss */
 pre .il {
   color: #40a070;
 }
 
 /* Literal.Number.Integer.Long */
-/* line 110, ../sass/_syntax.scss */
+/* line 111, ../sass/_syntax.scss */
 .highlight pre .hll {
   background-color: #ffffcc;
 }
 
-/* line 111, ../sass/_syntax.scss */
+/* line 112, ../sass/_syntax.scss */
 .highlight pre {
   background: transparent;
 }
 
-/* line 112, ../sass/_syntax.scss */
+/* line 113, ../sass/_syntax.scss */
 .highlight pre .c {
   color: #60a0b0;
   font-style: italic;
 }
 
 /* Comment */
-/* line 113, ../sass/_syntax.scss */
+/* line 114, ../sass/_syntax.scss */
 .highlight pre .err {
   border: 1px solid red;
 }
 
 /* Error */
-/* line 114, ../sass/_syntax.scss */
+/* line 115, ../sass/_syntax.scss */
 .highlight pre .k {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword */
-/* line 115, ../sass/_syntax.scss */
+/* line 116, ../sass/_syntax.scss */
 .highlight pre .o {
   color: #666666;
 }
 
 /* Operator */
-/* line 116, ../sass/_syntax.scss */
+/* line 117, ../sass/_syntax.scss */
 .highlight pre .cm {
   color: #60a0b0;
   font-style: italic;
 }
 
 /* Comment.Multiline */
-/* line 117, ../sass/_syntax.scss */
+/* line 118, ../sass/_syntax.scss */
 .highlight pre .cp {
   color: #007020;
 }
 
 /* Comment.Preproc */
-/* line 118, ../sass/_syntax.scss */
+/* line 119, ../sass/_syntax.scss */
 .highlight pre .c1 {
   color: #60a0b0;
   font-style: italic;
 }
 
 /* Comment.Single */
-/* line 119, ../sass/_syntax.scss */
+/* line 120, ../sass/_syntax.scss */
 .highlight pre .cs {
   color: #60a0b0;
   background-color: #fff0f0;
 }
 
 /* Comment.Special */
-/* line 120, ../sass/_syntax.scss */
+/* line 121, ../sass/_syntax.scss */
 .highlight pre .gd {
   color: #a00000;
 }
 
 /* Generic.Deleted */
-/* line 121, ../sass/_syntax.scss */
+/* line 122, ../sass/_syntax.scss */
 .highlight pre .ge {
   font-style: italic;
 }
 
 /* Generic.Emph */
-/* line 122, ../sass/_syntax.scss */
+/* line 123, ../sass/_syntax.scss */
 .highlight pre .gr {
   color: red;
 }
 
 /* Generic.Error */
-/* line 123, ../sass/_syntax.scss */
+/* line 124, ../sass/_syntax.scss */
 .highlight pre .gh {
   color: #000080;
   font-weight: bold;
 }
 
 /* Generic.Heading */
-/* line 124, ../sass/_syntax.scss */
+/* line 125, ../sass/_syntax.scss */
 .highlight pre .gi {
   color: #00a000;
 }
 
 /* Generic.Inserted */
-/* line 125, ../sass/_syntax.scss */
+/* line 126, ../sass/_syntax.scss */
 .highlight pre .go {
   color: #888888;
 }
 
 /* Generic.Output */
-/* line 126, ../sass/_syntax.scss */
+/* line 127, ../sass/_syntax.scss */
 .highlight pre .gp {
   color: #c65d09;
   font-weight: bold;
 }
 
 /* Generic.Prompt */
-/* line 127, ../sass/_syntax.scss */
+/* line 128, ../sass/_syntax.scss */
 .highlight pre .gs {
   font-weight: bold;
 }
 
 /* Generic.Strong */
-/* line 128, ../sass/_syntax.scss */
+/* line 129, ../sass/_syntax.scss */
 .highlight pre .gu {
   color: #800080;
   font-weight: bold;
 }
 
 /* Generic.Subheading */
-/* line 129, ../sass/_syntax.scss */
+/* line 130, ../sass/_syntax.scss */
 .highlight pre .gt {
   color: #0044dd;
 }
 
 /* Generic.Traceback */
-/* line 130, ../sass/_syntax.scss */
+/* line 131, ../sass/_syntax.scss */
 .highlight pre .kc {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Constant */
-/* line 131, ../sass/_syntax.scss */
+/* line 132, ../sass/_syntax.scss */
 .highlight pre .kd {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Declaration */
-/* line 132, ../sass/_syntax.scss */
+/* line 133, ../sass/_syntax.scss */
 .highlight pre .kn {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Namespace */
-/* line 133, ../sass/_syntax.scss */
+/* line 134, ../sass/_syntax.scss */
 .highlight pre .kp {
   color: #007020;
 }
 
 /* Keyword.Pseudo */
-/* line 134, ../sass/_syntax.scss */
+/* line 135, ../sass/_syntax.scss */
 .highlight pre .kr {
   color: #007020;
   font-weight: bold;
 }
 
 /* Keyword.Reserved */
-/* line 135, ../sass/_syntax.scss */
+/* line 136, ../sass/_syntax.scss */
 .highlight pre .kt {
   color: #902000;
 }
 
 /* Keyword.Type */
-/* line 136, ../sass/_syntax.scss */
+/* line 137, ../sass/_syntax.scss */
 .highlight pre .m {
   color: #40a070;
 }
 
 /* Literal.Number */
-/* line 137, ../sass/_syntax.scss */
+/* line 138, ../sass/_syntax.scss */
 .highlight pre .s {
   color: #4070a0;
 }
 
 /* Literal.String */
-/* line 138, ../sass/_syntax.scss */
+/* line 139, ../sass/_syntax.scss */
 .highlight pre .na {
   color: #4070a0;
 }
 
 /* Name.Attribute */
-/* line 139, ../sass/_syntax.scss */
+/* line 140, ../sass/_syntax.scss */
 .highlight pre .nb {
   color: #007020;
 }
 
 /* Name.Builtin */
-/* line 140, ../sass/_syntax.scss */
+/* line 141, ../sass/_syntax.scss */
 .highlight pre .nc {
   color: #0e84b5;
   font-weight: bold;
 }
 
 /* Name.Class */
-/* line 141, ../sass/_syntax.scss */
+/* line 142, ../sass/_syntax.scss */
 .highlight pre .no {
   color: #60add5;
 }
 
 /* Name.Constant */
-/* line 142, ../sass/_syntax.scss */
+/* line 143, ../sass/_syntax.scss */
 .highlight pre .nd {
   color: #555555;
   font-weight: bold;
 }
 
 /* Name.Decorator */
-/* line 143, ../sass/_syntax.scss */
+/* line 144, ../sass/_syntax.scss */
 .highlight pre .ni {
   color: #d55537;
   font-weight: bold;
 }
 
 /* Name.Entity */
-/* line 144, ../sass/_syntax.scss */
+/* line 145, ../sass/_syntax.scss */
 .highlight pre .ne {
   color: #007020;
 }
 
 /* Name.Exception */
-/* line 145, ../sass/_syntax.scss */
+/* line 146, ../sass/_syntax.scss */
 .highlight pre .nf {
   color: #06287e;
 }
 
 /* Name.Function */
-/* line 146, ../sass/_syntax.scss */
+/* line 147, ../sass/_syntax.scss */
 .highlight pre .nl {
   color: #002070;
   font-weight: bold;
 }
 
 /* Name.Label */
-/* line 147, ../sass/_syntax.scss */
+/* line 148, ../sass/_syntax.scss */
 .highlight pre .nn {
   color: #0e84b5;
   font-weight: bold;
 }
 
 /* Name.Namespace */
-/* line 148, ../sass/_syntax.scss */
+/* line 149, ../sass/_syntax.scss */
 .highlight pre .nt {
   color: #062873;
   font-weight: bold;
 }
 
 /* Name.Tag */
-/* line 149, ../sass/_syntax.scss */
+/* line 150, ../sass/_syntax.scss */
 .highlight pre .nv {
   color: #bb60d5;
 }
 
 /* Name.Variable */
-/* line 150, ../sass/_syntax.scss */
+/* line 151, ../sass/_syntax.scss */
 .highlight pre .ow {
   color: #007020;
   font-weight: bold;
 }
 
 /* Operator.Word */
-/* line 151, ../sass/_syntax.scss */
+/* line 152, ../sass/_syntax.scss */
 .highlight pre .w {
   color: #bbbbbb;
 }
 
 /* Text.Whitespace */
-/* line 152, ../sass/_syntax.scss */
+/* line 153, ../sass/_syntax.scss */
 .highlight pre .mf {
   color: #40a070;
 }
 
 /* Literal.Number.Float */
-/* line 153, ../sass/_syntax.scss */
+/* line 154, ../sass/_syntax.scss */
 .highlight pre .mh {
   color: #40a070;
 }
 
 /* Literal.Number.Hex */
-/* line 154, ../sass/_syntax.scss */
+/* line 155, ../sass/_syntax.scss */
 .highlight pre .mi {
   color: #40a070;
 }
 
 /* Literal.Number.Integer */
-/* line 155, ../sass/_syntax.scss */
+/* line 156, ../sass/_syntax.scss */
 .highlight pre .mo {
   color: #40a070;
 }
 
 /* Literal.Number.Oct */
-/* line 156, ../sass/_syntax.scss */
+/* line 157, ../sass/_syntax.scss */
 .highlight pre .sb {
   color: #4070a0;
 }
 
 /* Literal.String.Backtick */
-/* line 157, ../sass/_syntax.scss */
+/* line 158, ../sass/_syntax.scss */
 .highlight pre .sc {
   color: #4070a0;
 }
 
 /* Literal.String.Char */
-/* line 158, ../sass/_syntax.scss */
+/* line 159, ../sass/_syntax.scss */
 .highlight pre .sd {
   color: #4070a0;
   font-style: italic;
 }
 
 /* Literal.String.Doc */
-/* line 159, ../sass/_syntax.scss */
+/* line 160, ../sass/_syntax.scss */
 .highlight pre .s2 {
   color: #4070a0;
 }
 
 /* Literal.String.Double */
-/* line 160, ../sass/_syntax.scss */
+/* line 161, ../sass/_syntax.scss */
 .highlight pre .se {
   color: #4070a0;
   font-weight: bold;
 }
 
 /* Literal.String.Escape */
-/* line 161, ../sass/_syntax.scss */
+/* line 162, ../sass/_syntax.scss */
 .highlight pre .sh {
   color: #4070a0;
 }
 
 /* Literal.String.Heredoc */
-/* line 162, ../sass/_syntax.scss */
+/* line 163, ../sass/_syntax.scss */
 .highlight pre .si {
   color: #70a0d0;
   font-style: italic;
 }
 
 /* Literal.String.Interpol */
-/* line 163, ../sass/_syntax.scss */
+/* line 164, ../sass/_syntax.scss */
 .highlight pre .sx {
   color: #c65d09;
 }
 
 /* Literal.String.Other */
-/* line 164, ../sass/_syntax.scss */
+/* line 165, ../sass/_syntax.scss */
 .highlight pre .sr {
   color: #235388;
 }
 
 /* Literal.String.Regex */
-/* line 165, ../sass/_syntax.scss */
+/* line 166, ../sass/_syntax.scss */
 .highlight pre .s1 {
   color: #4070a0;
 }
 
 /* Literal.String.Single */
-/* line 166, ../sass/_syntax.scss */
+/* line 167, ../sass/_syntax.scss */
 .highlight pre .ss {
   color: #517918;
 }
 
 /* Literal.String.Symbol */
-/* line 167, ../sass/_syntax.scss */
+/* line 168, ../sass/_syntax.scss */
 .highlight pre .bp {
   color: #007020;
 }
 
 /* Name.Builtin.Pseudo */
-/* line 168, ../sass/_syntax.scss */
+/* line 169, ../sass/_syntax.scss */
 .highlight pre .vc {
   color: #bb60d5;
 }
 
 /* Name.Variable.Class */
-/* line 169, ../sass/_syntax.scss */
+/* line 170, ../sass/_syntax.scss */
 .highlight pre .vg {
   color: #bb60d5;
 }
 
 /* Name.Variable.Global */
-/* line 170, ../sass/_syntax.scss */
+/* line 171, ../sass/_syntax.scss */
 .highlight pre .vi {
   color: #bb60d5;
 }
 
 /* Name.Variable.Instance */
-/* line 171, ../sass/_syntax.scss */
+/* line 172, ../sass/_syntax.scss */
 .highlight pre .il {
   color: #40a070;
 }
 
 /* Literal.Number.Integer.Long */
 /* Literal.Number.Integer.Long */
-/* line 174, ../sass/_syntax.scss */
+/* line 175, ../sass/_syntax.scss */
 .highlight .bash .nv {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1437,48 +1464,95 @@ pre .il {
   user-select: none;
 }
 
-/*@import "compass/typography";
+/* line 184, ../sass/_syntax.scss */
+.highlight pre .err, pre .err {
+  border: none;
+}
 
-@include establish-baseline;*/
-/* line 5, ../sass/_typography.scss */
+/* line 61, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 0.75em;
+}
+
+/*h1{
+	font-size: $h1-font-size;//32px
+	margin: $h1-line-height 0;
+}
+
+h2{
+	font-size: $h2-font-size;//28px
+	margin: $h2-line-height 0;
+}
+
+h3{
+	font-size: $h3-font-size;//24p
+	margin: $h3-line-height 0;
+}
+
+h4{
+	font-size: $h4-font-size;//22px
+	margin: $h4-line-height 0;
+}
+
+h5{
+	font-size: $h5-font-size;//20px
+	margin: $h5-line-height 0;
+}
+
+h6{
+	font-size: $h6-font-size;//18px
+	margin: $h6-line-height 0;
+}*/
+/* line 35, ../sass/_typography.scss */
 h1 {
   font-size: 2em;
-  margin: 0.375 0;
+  line-height: 1.125em;
 }
 
-/* line 10, ../sass/_typography.scss */
+/* line 38, ../sass/_typography.scss */
 h2 {
   font-size: 1.75em;
-  margin: 0.42857 0;
+  line-height: 1.28571em;
 }
 
-/* line 15, ../sass/_typography.scss */
+/* line 41, ../sass/_typography.scss */
 h3 {
   font-size: 1.5em;
-  margin: 0.5 0;
+  line-height: 1.5em;
 }
 
-/* line 20, ../sass/_typography.scss */
+/* line 44, ../sass/_typography.scss */
 h4 {
-  font-size: 1.375em;
-  margin: 0.54545 0;
-}
-
-/* line 25, ../sass/_typography.scss */
-h5 {
   font-size: 1.25em;
-  margin: 0.6 0;
+  line-height: 1.2em;
 }
 
-/* line 30, ../sass/_typography.scss */
-h6 {
+/* line 47, ../sass/_typography.scss */
+h5 {
   font-size: 1.125em;
-  margin: 0.66667 0;
+  line-height: 1.33333em;
 }
 
-/* line 35, ../sass/_typography.scss */
+/* line 51, ../sass/_typography.scss */
 p, li, .highlight {
   line-height: 1.8em;
+}
+
+/* line 55, ../sass/_typography.scss */
+p, pre, li {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+/* line 60, ../sass/_typography.scss */
+dl, menu, ol, ul {
+  margin: 0;
 }
 
 /* line 1, ../sass/_common.scss */
@@ -1497,7 +1571,7 @@ body {
 
 /* line 13, ../sass/_common.scss */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 12px 0;
   color: #555555;
 }
 
@@ -1510,7 +1584,6 @@ h1, h2, h3, h4, h5, h6 {
 /* line 27, ../sass/_common.scss */
 .articles {
   color: #555555;
-  margin-left: 20%;
   background: white;
   border: 1px solid #e0e0e0;
   border-top-color: transparent;
@@ -1540,31 +1613,31 @@ h1, h2, h3, h4, h5, h6 {
   background: #f6f6f6;
   border: 1px solid #e0e0e0;
 }
-/* line 54, ../sass/_common.scss */
+/* line 55, ../sass/_common.scss */
 .image-container img {
   border: 0;
   max-width: 100%;
 }
 
-/* line 60, ../sass/_common.scss */
+/* line 61, ../sass/_common.scss */
 .search-box {
   width: 9em;
   padding: 3px 2px;
 }
 
-/* line 65, ../sass/_common.scss */
+/* line 66, ../sass/_common.scss */
 .search-btn {
   margin: 0 !important;
   padding: 1px 4px !important;
 }
 
 /**clear float*/
-/* line 71, ../sass/_common.scss */
+/* line 72, ../sass/_common.scss */
 .clearfix {
   *zoom: 1;
   /**fix IE6-7*/
 }
-/* line 73, ../sass/_common.scss */
+/* line 74, ../sass/_common.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -1575,109 +1648,162 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**go to top button*/
-/* line 84, ../sass/_common.scss */
+/* line 85, ../sass/_common.scss */
 .go2Top {
   left: 86%;
   z-index: 2;
-  width: 1em;
-  bottom: 4em;
-  padding: .4em;
   color: #FFF;
   opacity: 0;
-  line-height: 1.2em;
+  bottom: 4em;
+  padding: .6em;
   position: fixed;
+  background: #E0E0E0;
   text-decoration: none;
-  background-color: #222222;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 98, ../sass/_common.scss */
+/* line 97, ../sass/_common.scss */
 .go2Top:hover {
-  background-color: black;
+  background: #BBB;
 }
 
 /* line 1, ../sass/component/_sidenav.scss */
 .sidenav {
-  padding: 14px 0 0 16px;
+  padding: 28px 10px 0 20px;
 }
 /* line 3, ../sass/component/_sidenav.scss */
-.sidenav h5 {
+.sidenav h4 {
+  margin-bottom: 2px;
   color: #f58220;
 }
-/* line 6, ../sass/component/_sidenav.scss */
+/* line 7, ../sass/component/_sidenav.scss */
+.sidenav .fa {
+  margin-right: 6px;
+}
+/* line 10, ../sass/component/_sidenav.scss */
 .sidenav ul, .sidenav li {
   margin: 0;
 }
-/* line 9, ../sass/component/_sidenav.scss */
-.sidenav ul {
-  list-style: none;
-  padding-left: 20px;
-}
 /* line 13, ../sass/component/_sidenav.scss */
+.sidenav ul {
+  padding-left: 0;
+  list-style: none;
+}
+/* line 17, ../sass/component/_sidenav.scss */
 .sidenav a {
-  font-weight: bold;
-  font-size: 0.8125em;
-  color: #666600;
+  color: #666666;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+/* line 21, ../sass/component/_sidenav.scss */
+.sidenav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* line 27, ../sass/component/_sidenav.scss */
+#tag-cloud {
+  line-height: 2em;
+}
+/* line 29, ../sass/component/_sidenav.scss */
+#tag-cloud a {
+  float: left;
+  margin-right: 4px;
+  text-decoration: none;
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-/* line 18, ../sass/component/_sidenav.scss */
-.sidenav a:hover {
-  color: black;
+/* line 32, ../sass/component/_sidenav.scss */
+#tag-cloud a:last-child {
+  margin-right: 0;
 }
-/* line 23, ../sass/component/_sidenav.scss */
-.sidenav .search-box {
-  width: 9em;
-  margin-right: 4px;
-  padding: 4px 2px;
-}
-/* line 29, ../sass/component/_sidenav.scss */
-.sidenav .search-btn {
-  bottom: 1px;
-  position: relative;
-  font-size: 1em;
-  padding: 2px 6px !important;
+/* line 37, ../sass/component/_sidenav.scss */
+#tag-cloud a:hover {
+  color: #000 !important;
+  text-decoration: underline;
 }
 
-/**navigation*/
-/* line 2, ../sass/component/_navigation.scss */
+/* line 43, ../sass/component/_sidenav.scss */
+.search-box-wrapper {
+  margin: 0;
+}
+/* line 45, ../sass/component/_sidenav.scss */
+.search-box-wrapper input {
+  width: 9.6em;
+  margin-right: 4px;
+  padding: 6px 2px;
+  border: 1px solid #c7c7c7;
+}
+/* line 51, ../sass/component/_sidenav.scss */
+.search-box-wrapper input:focus {
+  outline: none;
+}
+/* line 55, ../sass/component/_sidenav.scss */
+.search-box-wrapper .search-btn {
+  bottom: 1px;
+  position: relative;
+  font-size: 16px;
+  padding: 2px 10px !important;
+}
+
+/* line 1, ../sass/component/_navigation.scss */
 .navigation {
-  padding: 1em 0;
   background: #222222;
 }
-/* line 5, ../sass/component/_navigation.scss */
+/* line 3, ../sass/component/_navigation.scss */
 .navigation ul {
   float: left;
-  margin-left: 15%;
+  margin-left: 5%;
 }
-/* line 9, ../sass/component/_navigation.scss */
+/* line 7, ../sass/component/_navigation.scss */
 .navigation li {
   margin: 0;
   float: left;
   margin-right: .6em;
 }
-/* line 14, ../sass/component/_navigation.scss */
+/* line 12, ../sass/component/_navigation.scss */
+.navigation .fa {
+  margin-right: 8px;
+}
+/* line 15, ../sass/component/_navigation.scss */
 .navigation a {
-  height: 2em;
+  height: 1.4em;
   width: 3.8em;
-  line-height: 2em;
   display: block;
   font-weight: bold;
+  line-height: 1.4em;
   text-align: center;
   text-decoration: none;
   color: #f9f9f9;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-/* line 24, ../sass/component/_navigation.scss */
+/* line 25, ../sass/component/_navigation.scss */
 .navigation a:hover {
   text-shadow: rgba(78, 205, 196, 0.4) 1px 1px 0;
+}
+/* line 30, ../sass/component/_navigation.scss */
+.navigation .menu {
+  display: none;
+  float: right;
+  height: 52px;
+  line-height: 52px;
+}
+/* line 35, ../sass/component/_navigation.scss */
+.navigation .menu span {
+  width: 28px;
+  height: 28px;
+  display: block;
+  background: url(../images/img.png) 0px -5px no-repeat;
 }
 
 /**pagination*/
@@ -1703,13 +1829,13 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
-/* line 17, ../sass/component/_pagination.scss */
+/* line 18, ../sass/component/_pagination.scss */
 .pagination a:hover {
   color: #f58220;
   border-color: #e0e0e0;
   background-color: #f6f6f6;
 }
-/* line 23, ../sass/component/_pagination.scss */
+/* line 24, ../sass/component/_pagination.scss */
 .pagination .current {
   cursor: default;
   border-color: #e0e0e0;
@@ -1729,7 +1855,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-wrapper .footer {
   font-size: 0.875em;
   color: #aaaaaa;
-  margin-left: 15%;
+  margin-left: 5%;
 }
 /* line 13, ../sass/component/_footer.scss */
 .footer-wrapper ul {
@@ -1759,54 +1885,330 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-/* line 17, ../sass/_other.scss */
-.article-wrapper {
+/**main content*/
+/* line 19, ../sass/home.scss */
+.container {
+  width: 100%;
   float: left;
-  width: 82%;
+  margin-right: -310px;
 }
 
-/* line 21, ../sass/_other.scss */
-.articles {
-  margin-left: 18.29268%;
+/* line 25, ../sass/home.scss */
+.article-wrapper {
+  margin-right: 310px;
+}
+
+/* line 29, ../sass/home.scss */
+.sidenav-wrapper {
+  float: left;
+  width: 300px;
+}
+
+/* Landscape phone to portrait tablet */
+/*@media (max-width: 768px)*/
+@media (max-width: 940px) {
+  /* line 4, ../sass/_rwd.scss */
+  .wrapper {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+
+  /* line 8, ../sass/_rwd.scss */
+  .articles {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  /* line 12, ../sass/_rwd.scss */
+  .article, .sidenav-wrapper {
+    padding: 24px 18px;
+  }
+
+  /* line 15, ../sass/_rwd.scss */
+  .footer-wrapper {
+    display: none;
+  }
+
+  /* line 18, ../sass/_rwd.scss */
+  .sidenav-wrapper {
+    padding: 0;
+    width: 100%;
+    float: none;
+    top: -500px;
+    visibility: hidden;
+    position: fixed;
+    background: #f6f6f6;
+    border-bottom: 1px solid #e0e0e0;
+    -webkit-transition: top 0.4s linear;
+    -moz-transition: top 0.4s linear;
+    -o-transition: top 0.4s linear;
+    transition: top 0.4s linear;
+  }
+
+  /* line 29, ../sass/_rwd.scss */
+  .sidenav {
+    padding: 0 10px 10px;
+  }
+
+  /* line 32, ../sass/_rwd.scss */
+  .article-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 36, ../sass/_rwd.scss */
+  .container {
+    margin-right: 0;
+  }
+
+  /* line 39, ../sass/_rwd.scss */
+  .navigation {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+  }
+  /* line 43, ../sass/_rwd.scss */
+  .navigation ul {
+    margin-left: 20px;
+  }
+  /* line 46, ../sass/_rwd.scss */
+  .navigation a {
+    width: 3.4em;
+  }
+  /* line 48, ../sass/_rwd.scss */
+  .navigation a:hover {
+    color: #FFF;
+    text-shadow: none;
+  }
+  /* line 53, ../sass/_rwd.scss */
+  .navigation .fa {
+    margin-right: 4px;
+  }
+  /* line 56, ../sass/_rwd.scss */
+  .navigation .menu {
+    display: block;
+  }
+
+  /* line 60, ../sass/_rwd.scss */
+  .footer-wrapper .footer {
+    margin-left: 30px;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+/*@media (min-width: 768px) and (max-width: 940px) {
+	.articles{
+		border-left: 0;
+		border-right: 0;
+	}
+	.article-wrapper{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.container{
+		margin-right: 0;
+	}
+	.navigation ul, .footer-wrapper .footer{
+		margin-left: 30px;	
+	}	
+}*/
+/* Default: 940px and up  */
+@media (min-width: 941px) and (max-width: 1210px) {
+  /* line 85, ../sass/_rwd.scss */
+  .articles {
+    border-left: 0;
+  }
+
+  /* line 88, ../sass/_rwd.scss */
+  .article-wrapper {
+    margin-left: 0;
+  }
+
+  /* line 91, ../sass/_rwd.scss */
+  .navigation ul {
+    margin-left: 15px;
+  }
+
+  /* line 94, ../sass/_rwd.scss */
+  .footer-wrapper .footer {
+    margin-left: 30px;
+  }
+
+  /* line 97, ../sass/_rwd.scss */
+  .sidenav-wrapper {
+    visibility: visible !important;
+  }
+}
+/* Large desktop */
+@media (min-width: 1211px) {
+  /* line 104, ../sass/_rwd.scss */
+  .navigation {
+    float: left;
+    width: 300px;
+    z-index: 100;
+    position: relative;
+    background: transparent;
+  }
+  /* line 110, ../sass/_rwd.scss */
+  .navigation ul, .navigation li {
+    margin: 0;
+    float: none;
+  }
+  /* line 114, ../sass/_rwd.scss */
+  .navigation li {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  /* line 117, ../sass/_rwd.scss */
+  .navigation a {
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    display: block;
+    text-align: left;
+    color: #555555;
+  }
+  /* line 125, ../sass/_rwd.scss */
+  .navigation h4 {
+    margin: 0;
+  }
+
+  /* line 132, ../sass/_rwd.scss */
+  .home #home,
+  .archives #archives,
+  .tags #tags, .blog #blog,
+  .about #about, .contact #contact, .navigation a:hover {
+    background: #FFF;
+    color: #555555;
+    position: relative;
+    right: -1px;
+    text-shadow: none;
+  }
+
+  /* line 139, ../sass/_rwd.scss */
+  .wrapper {
+    float: left;
+    width: 100%;
+    margin-left: -310px;
+  }
+
+  /* line 144, ../sass/_rwd.scss */
+  .article-wrapper {
+    margin-left: 310px;
+  }
+
+  /* line 147, ../sass/_rwd.scss */
+  .articles {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  /* line 151, ../sass/_rwd.scss */
+  .footer-wrapper .footer {
+    margin-left: 300px;
+  }
+
+  /* line 155, ../sass/_rwd.scss */
+  .sidenav-wrapper {
+    visibility: visible !important;
+  }
+}
+/* line 36, ../sass/home.scss */
+.article {
+  width: auto;
+  float: none;
+  margin-left: 0;
+  border-bottom: 1px solid #e0e0e0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 42, ../sass/home.scss */
+.article:last-child {
+  border-bottom: none;
+}
+/* line 45, ../sass/home.scss */
+.article a {
+  color: #222222;
+}
+/* line 48, ../sass/home.scss */
+.article .article-header {
+  margin-bottom: 1.2em;
+}
+/* line 51, ../sass/home.scss */
+.article .article-content {
+  color: #222222;
+}
+/* line 53, ../sass/home.scss */
+.article .article-content p {
+  margin: .6em 0;
+}
+/* line 61, ../sass/home.scss */
+.article .title {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+/**pink button*/
+/* line 43, ../sass/_class.scss */
+.pink-btn, .pink-btn:hover {
+  color: #FFF !important;
+  text-decoration: none !important;
+}
+
+/* line 47, ../sass/_class.scss */
+.pink-btn {
+  margin-top: 1.2em;
+  font-weight: bold;
+  padding: 0.6em 0.8em;
+  background: #DF481A;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #df481a), color-stop(100%, #d12a0c));
+  background-image: -webkit-linear-gradient(top, #df481a, #d12a0c);
+  background-image: -moz-linear-gradient(top, #df481a, #d12a0c);
+  background-image: -o-linear-gradient(top, #df481a, #d12a0c);
+  background-image: linear-gradient(top, #df481a, #d12a0c);
+}
+/* line 55, ../sass/_class.scss */
+.pink-btn:hover {
+  background: #c84117;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c84117), color-stop(100%, #cc290c));
+  background-image: -webkit-linear-gradient(top, #c84117, #cc290c);
+  background-image: -moz-linear-gradient(top, #c84117, #cc290c);
+  background-image: -o-linear-gradient(top, #c84117, #cc290c);
+  background-image: linear-gradient(top, #c84117, #cc290c);
 }
 
 /* line 2, ../sass/archives.scss */
 .archives-list {
-  margin: 0;
-  padding-left: 40px;
+  padding-left: 20px;
+  list-style: none;
 }
 /* line 5, ../sass/archives.scss */
-.archives-list li {
-  margin: .4em 0;
+.archives-list h4 {
+  color: #f58220;
+  margin-top: 0;
+  margin-left: -20px;
 }
-/* line 8, ../sass/archives.scss */
-.archives-list p {
-  margin: 0;
-  line-height: 1em;
-}
-/* line 12, ../sass/archives.scss */
-.archives-list h5 {
-  margin-left: -42px;
-  color: #666600;
-}
-/* line 16, ../sass/archives.scss */
+/* line 10, ../sass/archives.scss */
 .archives-list a {
-  font-weight: bold;
   text-decoration: none;
-  color: #666666;
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
-/* line 21, ../sass/archives.scss */
+/* line 13, ../sass/archives.scss */
 .archives-list a:hover {
-  color: #222222;
+  color: #f58220;
+  text-decoration: underline;
 }
 
-/* line 30, ../sass/archives.scss */
-.article h5 {
-  color: #666600;
+/* line 20, ../sass/archives.scss */
+.article .time-tag {
+  margin-top: -8px;
 }
 
 /* line 2, ../sass/tags.scss */

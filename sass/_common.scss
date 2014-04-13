@@ -11,7 +11,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-    margin: 0;
+	margin: 12px 0;
     color: $xxlight-dark;
 }
 
@@ -26,10 +26,10 @@ h1, h2, h3, h4, h5, h6{
 
 .articles{
 	color: $font-color;
-	margin-left: $container-gutter;
+	//@extend %border-radius;
 	background: $article-wrapper-bg-color;
 	border: 1px solid $border-color;
-	border-top-color: transparent;	
+	border-top-color: transparent;
 }
 
 .navigation ul, .footer-wrapper ul{
@@ -50,7 +50,8 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 	padding: 25px 35px;
 	background: $body-bg-color;
-	border: 1px solid $border-color;	
+	border: 1px solid $border-color;
+	@extend %border-radius;	
 	img{
 		border: 0;
 		max-width: 100%;
@@ -84,18 +85,16 @@ h1, h2, h3, h4, h5, h6{
 .go2Top{
 	left: 86%;
     z-index: 2;
-	width: 1em;
-	bottom: 4em;	
-    padding: .4em;
     color: #FFF;
     opacity: 0;  
-    line-height: 1.2em;
+	bottom: 4em;	
+    padding: .6em;    
 	position: fixed;
+	background: #E0E0E0;
 	text-decoration: none;
-	background-color: $light-dark;
 	@extend %border-radius;
 	@include transition(all .3s ease-in-out);
 	&:hover{
-		background-color: $dark;	
+		background: #BBB;	
 	}
 }

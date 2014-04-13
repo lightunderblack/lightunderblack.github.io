@@ -6,29 +6,37 @@
 	<!--[if lt IE 9]>
 	    <script src="/javascript/lib/html5shiv.js"></script>
 	<![endif]-->	
-	<link rel="stylesheet" href="/css/post.css">	
+	<link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">		
 </head>
-<body class="{{page.activePage}}">
+<body class="{{page.activePage}} clearfix">
 	{%include header.html%}
 	<div class="wrapper clearfix">
-		<div class="article-wrapper">
-			<article class="articles">
-				<h1>{{page.title}}</h1>
-				<p class="time-tag">
-					<time class="time" datetime="{{page.date|date:'%Y-%m-%d'}}">{{page.date|date:"%Y年%m月%d日"}}</time>
-					<span class="tag-label">标签:</span>
-		    		{% for tag in page.tags %}
-		    		<a class="tag" href="/tags/index.html#{{ tag | replace:' ', '_' }}">{{ tag }}</a>
-		    		{% endfor %}
-				</p>				
-				<!--文章内容-->
-				{{content}}
-				<!--留言板-->
-				{%include comment.html%}					
-			</article>
-		</div>			
-		<a class="go2Top" href="javascript:void(0)">返回顶部</a>
-	</div>
+		<div class="container">
+			<section class="article-wrapper">
+				<div class="articles">
+					<div class="article">
+						<header class="article-header">
+							<h2 class="title"><a href="{{page.url}}">{{page.title}}</a></h2>
+					    	<p class="time-tag">
+					    		<time datetime="{{page.date|date:'%Y-%m-%d'}}">{{page.date|date:"%Y年%m月%d日"}}</time>
+					    		<span class="tag-label">标签:</span>
+					    		{% for tag in page.tags %}
+					    		<a class="tag" href="/tags/index.html#{{ tag | replace:' ', '_' }}">{{ tag }}</a>	
+					    		{% endfor %}
+					    	</p>				
+						</header>
+						<div class="article-content">{{content}}</div>	
+						{%include comment.html%}
+					</div>		
+				</div>
+			</section>
+		</div>
+		<aside class="sidenav-wrapper">{%include sidenav.html%}</aside>
+		<a class="go2Top" href="javascript:void(0)" title="返回顶部">
+			<i class="fa fa-arrow-up"></i>
+		</a>	
+	</div>	
 	{%include footer.html%}					
 </body>
 </html>

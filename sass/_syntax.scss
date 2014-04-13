@@ -21,6 +21,7 @@ pre,code {
 	color: $font-color;
 	background: $body-bg-color; 
 	border: 1px solid $border-color;
+	@include border-radius(2px);
 	/*border-radius: 5px;
 	background: #333;
 	background: $body-bg-color;
@@ -177,4 +178,9 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.highlight pre .hll 
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+}
+
+
+.highlight pre .err, pre .err{
+	border: none;
 }

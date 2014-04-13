@@ -15,12 +15,12 @@ activePage: blog
     	</p>				
 	</header>
 	<div class="article-content">
-	{% if post.content contains '<!--more-->' %}
-	    {{ post.content | split:'<!--more-->' | first }}
-	{% else %}
-	    {{ post.excerpt }}
-	{% endif %}	
-	<a class="pink-btn" href="{{post.url}}">阅读全文</a>
+		{% if post.content contains '<!--more-->' %}
+		    {{ post.content | split:'<!--more-->' | first }}
+		{% else %}
+		    {{ post.excerpt }}
+		{% endif %}	
+		<a class="pink-btn" href="{{post.url}}">阅读全文</a>
 	</div>
 </article>
 {%endfor%}

@@ -1,35 +1,61 @@
 .sidenav{
-	padding: 14px 0 0 16px;
-	h5{
+	padding: 28px 10px 0 20px;
+	h4{
+		margin-bottom: 2px;
 		color: $tag-color;
+	}
+	.fa{
+		margin-right: 6px;
 	}
 	ul, li{
 		margin: 0;
 	}
 	ul {
+		padding-left: 0;
 		list-style: none;
-		padding-left: 20px;
 	}
 	a {
-		font-weight: bold;
-		font-size: $xsmall-font-size;
-		color: $side-nav-link-color;
-		@include transition(color .3s ease-in-out);
+		color: $xxxlight-dark;
+		text-decoration: none;
+		@include transition(color .2s ease-in-out);
 		&:hover{
-			color: $side-nav-link-hover-color;
+			color: $dark;
+			text-decoration: underline;
 		}
 	}
-
-	.search-box{
-		width: 9em;
+}
+#tag-cloud{
+	line-height: 2em;
+	a {
+		float: left;
 		margin-right: 4px;
-		padding: 4px 2px;
+		&:last-child{
+			margin-right: 0;
+		}
+		text-decoration: none;
+		@include transition(color .3s ease-in-out);
+		&:hover{
+			color: #000 !important;
+			text-decoration: underline;
+		}
+	}	
+}
+.search-box-wrapper{
+	margin: 0;
+	input{
+		width: 9.6em;
+		margin-right: 4px;
+		padding: 6px 2px;
+		border: 1px solid darken($border-color, 10%);
+		@extend %border-radius;
+		&:focus{
+			outline: none;	
+		}			
 	}
-
 	.search-btn{
 		bottom: 1px;
 		position: relative;
 		font-size: $base-font-size;
-		padding: 2px 6px !important;
-	}	
+		padding: 2px 10px !important;
+	}		
 }

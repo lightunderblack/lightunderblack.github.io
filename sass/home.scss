@@ -5,6 +5,7 @@
 @import "variable";
 @import "class";
 
+@import "rwd";
 @import "syntax";
 @import "typography";
 
@@ -15,13 +16,27 @@
 @import "component/footer";
 
 /**main content*/
-.article-wrapper{
+.container{
+	width: 100%;
 	float: left;
-	width: $container-width;		
+	margin-right: $container-right-gutter;
 }
+
+.article-wrapper{
+	margin-right: $articles-right-gutter;	
+}
+
+.sidenav-wrapper{
+	float: left;
+	width: 300px;
+}
+
+@include rwd();
+
 .article{
 	width: auto;
 	float: none;
+	margin-left: 0;
 	border-bottom: 1px solid $border-color;
 	@include transition(all .3s ease-in-out);
 	&:last-child{
@@ -44,13 +59,11 @@
 		@extend %time-tag;
 	}
 	.title{
+		margin-top: 0;
+		margin-bottom: 6px;
 		@extend %title-hover;
 	}
 }
-.sidenav-wrapper{
-	float: left;
-	width: $sidenav-width;
-}	
 
 /**pink button*/
 @include pink-btn;

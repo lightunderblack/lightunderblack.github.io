@@ -13,6 +13,7 @@
 		display: inline-block;
 		text-decoration: none;
 		border: 1px solid transparent;
+		@extend %border-radius;
 		@include transition(background-color .2s ease-in-out);
 		&:hover{
 			color: $tag-color;
