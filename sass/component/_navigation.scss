@@ -21,7 +21,7 @@
 		text-align: center;
 		text-decoration: none;
 		color: $navigation-color;
-		@include transition(color .3s ease-in-out);
+		@include transition(all .3s ease-in-out);
 		&:hover{
 			@extend %active;
 			@include text-shadow(rgba($navigation-hover-color, .4) 1px 1px 0);	

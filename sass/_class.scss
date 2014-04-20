@@ -2,6 +2,10 @@
 	@include border-radius(4px);
 }
 
+%active-border-color{
+	border-color: #f58220;	
+}
+
 %active{
 	color: $navigation-hover-color;		
 }
@@ -32,6 +36,7 @@
 %title-hover{
 	a{
 		text-decoration: none;
+		@include transition(color .2s ease-in-out);
 		&:hover{
 			color: $tag-color;
 			text-decoration: underline;
@@ -52,9 +57,20 @@
 		display: inline-block;
 		@extend %border-radius;
 		@include background-image(linear-gradient(top, #DF481A, #D12A0C));
+		@include transition(all .2s ease-in-out);
 		&:hover{
 			background: darken(#DF481A, 5%);
 			@include background-image(linear-gradient(top, darken(#DF481A, 5%), darken(#D12A0C, 1%)));
 		}		
+	}
+}
+
+@mixin active-navigation(){
+	@each $item in $navigation-items{
+		.#{$item}{
+			##{$item}{			
+				@content;
+			}
+		} 		
 	}
 }

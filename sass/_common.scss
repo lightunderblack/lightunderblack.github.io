@@ -15,9 +15,11 @@ h1, h2, h3, h4, h5, h6{
     color: $xxlight-dark;
 }
 
-.home #home, .archives #archives, .tags #tags, .blog #blog, .about #about, .contact #contact{
-	@extend %active;
-}
+@include active-navigation(){		
+	a{
+		@extend %active;	
+	}	
+};
 
 .wrapper{
 	position: relative;

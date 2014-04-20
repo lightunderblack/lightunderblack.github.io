@@ -6,8 +6,8 @@
 			padding-bottom: 0;
 		}
 		.articles{
-			border-left: 0;
-			border-right: 0;
+			border-left: none;
+			border-right: none;			
 		}
 		.article, .sidenav-wrapper{
 			padding: 24px 18px;	
@@ -64,20 +64,7 @@
 	 
 	/* Portrait tablet to landscape and desktop */
 	/*@media (min-width: 768px) and (max-width: 940px) {
-		.articles{
-			border-left: 0;
-			border-right: 0;
-		}
-		.article-wrapper{
-			margin-left: 0;
-			margin-right: 0;
-		}
-		.container{
-			margin-right: 0;
-		}
-		.navigation ul, .footer-wrapper .footer{
-			margin-left: 30px;	
-		}	
+
 	}*/
 	 
 	/* Default: 940px and up  */
@@ -121,21 +108,30 @@
 				display: block;	
 				text-align: left;		
 				color: $font-color;
+				border-left: 4px solid transparent;
+				&:hover{
+					background: #FFF;
+					color: $font-color;
+					/*position: relative;
+					right: -1px;*/
+					border-left-color: #f58220;
+					@include text-shadow(none);						
+				}				
 			}
 			h4{
 				margin: 0;
 			}
 		}
-		.home #home, 
-			.archives #archives, 
-				.tags #tags, .blog #blog, 
-					.about #about, .contact #contact, .navigation a:hover{
-			background: #FFF;
-			color: $font-color;
-			position: relative;
-			right: -1px;
-			@include text-shadow(none);	
-		}	
+		@include active-navigation(){
+			a{
+				background: #FFF;
+				color: $font-color;
+				/*position: relative;
+				right: -1px;*/
+				border-left-color: #f58220;
+				@include text-shadow(none);					
+			}
+		};
 		.wrapper{
 			float: left;
 			width: 100%;
