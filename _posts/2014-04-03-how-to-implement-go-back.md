@@ -29,7 +29,7 @@ tags: ["JavaScript", "CSS3"]
 
 这里使用元素的*scrollTo*方法，并在调用该方法时使用动画，使得滚动条滚动过程平滑。我将次实现封装了组件，代码如下：
 
-<script src="https://gist.github.com/lightunderblack/862491dbfe4f648262bf.js"></script>
+<script src="https://gist.github.com/lightunderblack/a10686b4116c57b6b846.js"></script>
 
 *在线演示*
 
