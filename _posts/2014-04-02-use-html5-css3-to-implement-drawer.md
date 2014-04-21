@@ -26,14 +26,11 @@ tags: ["JavaScript", "HTML5", "CSS3"]
 {%highlight javascript linenos%}
 (function($, window, undefined){
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
-	
 	function Drawer(config){
 		return this._init(config);
 	}
-	
 	Drawer.prototype = {
 		constructor: Drawer,
-		
 		_init: function(config){
 			var me = this;
 			me._config = $.extend({
@@ -46,7 +43,6 @@ tags: ["JavaScript", "HTML5", "CSS3"]
 			me._cacheParam()._bindEventListener();
 			return me;
 		},
-		
 		_cacheParam: function(){
 			var me = this, 
 				config = me._config;
@@ -59,7 +55,6 @@ tags: ["JavaScript", "HTML5", "CSS3"]
 			}
 			return me;
 		},
-		
 		_bindEventListener: function(){
 			var me = this,
 				$nav = me._nav,
