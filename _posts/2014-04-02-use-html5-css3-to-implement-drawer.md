@@ -19,7 +19,7 @@ tags: ["JavaScript", "HTML5", "CSS3"]
 
 #####*css*代码：#####
 
-<script src="https://gist.github.com/lightunderblack/124f027fd484729d2dde.js"></script>
+<script src="https://gist.github.com/lightunderblack/e0ff18d11c09409119c6.js"></script>
 
 #####组件Drawer代码(依赖*Zepto.js*)：#####
 
