@@ -12,12 +12,7 @@ tags: ["JavaScript", "CSS3"]
 
 页面顶部元素设置一个**id**值，返回顶部用**a**标签，设置**a**标签的**href**值为刚才的顶部元素**id**值。代码如下：
 
-{%highlight html linenos%}
-<div id="container">
-  <p>足够使container出现滚动条的内容</p>
-</div>
-<a href="#container" id="goToTop">返回顶部</a>
-{%endhighlight%}
+<script src="https://gist.github.com/lightunderblack/ae1a1829fb0fcc131800.js"></script>
 
 利用浏览器**a**标签定位锚点功能，可以容易实现返回顶部，但滚动条滚动过程中并不平滑。
 <!--more-->
