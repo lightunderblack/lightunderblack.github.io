@@ -64,7 +64,6 @@ tags: ["JavaScript", "HTML5", "CSS3"]
 				position = {x : 0, y : 0},
 				navWidth = $nav.width(),
 				transition = me._transition;
-		
 			$nav.attr('data-'+direction, '0');
 			$container.on('touchstart', function(e){
 				var target = e.touches.item(0);
