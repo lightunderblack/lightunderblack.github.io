@@ -6,9 +6,9 @@
 	border-top: 1px solid $border-color;
 	background-color: $footer-header-bg-color;
 	.footer{
+		margin-left: 30px;
 		font-size: $small-font-size;
 		color: $article-content-color;
-		margin-left: $header-footer-gutter;
 	}
 	ul{
 		padding: 6px 0;

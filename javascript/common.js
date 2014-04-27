@@ -25,7 +25,12 @@
         if($sidenavWrapper.css('visibility') === 'visible'){
             $sidenavWrapper.css('top', top);    
         }
-    });  	
+    }); 
+
+    $('a').on('focus', function(){
+        this.blur();
+    });
+
     $navigation.children('.menu').on('click', function(e){
     	if($sidenavWrapper.css('visibility') === 'hidden'){
     		$sidenavWrapper.css({
@@ -37,18 +42,21 @@
     	}
     	e.stopPropagation();
     });
+
     $(document).on('click', function(e){
     	var target = e.srcElement || e.target;
     	if($sidenavWrapper.css('visibility') === 'visible'){
     		$sidenavWrapper.css('top', top);	
     	}
     });
+
     $sidenavWrapper.on('webkitTransitionEnd', function(e){
     	var $this = $(this);
     	if(parseInt($this.css('top'), 10) < 0){
     		$this.css({visibility: 'hidden'});
     	}
     });
+
     window.onorientationchange = window.onresize = function(){
         getHeight(); 
     };

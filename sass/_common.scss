@@ -5,6 +5,7 @@ html{
 body{
 	font-size: 100%;//default font size 16px
     min-height: 100%;
+    overflow-x: hidden;
     position: relative;
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: $body-bg-color;  
@@ -98,5 +99,10 @@ h1, h2, h3, h4, h5, h6{
 	@include transition(all .3s ease-in-out);
 	&:hover{
 		background: #BBB;	
+	}
+	i{
+		width: 17px;
+		height: 17px;
+		display: inline-block;				
 	}
 }

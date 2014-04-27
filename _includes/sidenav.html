@@ -1,9 +1,5 @@
 <div class="sidenav">
-	<!--<p class="search-box-wrapper">
-		<input type="text" />
-		<a class="pink-btn search-btn" href="javascript">search</a>
-	</p>-->
-	<h4><i class="fa fa-archive"></i>归档</h4>
+	<h4>归档</h4>
 	<ul>
 	  {% for post in site.posts %}
 	    {% unless post.next %}
@@ -17,7 +13,7 @@
 	    {% endunless %}
 	  {% endfor %}
 	</ul>
-	<h4><i class="fa fa-tags"></i>标签</h4>
+	<h4>标签</h4>
 	<div id="tag-cloud" style="display:none;" class="clearfix">
 		{% for post in site.posts %}
 			{% for tag in post.tags %}
