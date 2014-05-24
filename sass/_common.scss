@@ -28,8 +28,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .articles{
+	min-height: 580px;
 	color: $font-color;
-	//@extend %border-radius;
 	background: $article-wrapper-bg-color;
 	border: 1px solid $border-color;
 	border-top-color: transparent;

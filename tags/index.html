@@ -2,6 +2,7 @@
 layout: other
 activePage: tags
 ---
+<article class="article">
 <ul class="archives-list" style="display: none;">
   {% for post in site.posts %}
     {% for tag in post.tags %}
@@ -18,6 +19,7 @@ activePage: tags
     {% endfor %}
   {% endfor %}  
 </ul>
+</article>
 <script>
   (function($){
     $(function(){
@@ -29,6 +31,22 @@ activePage: tags
       var tag;
       var map = {};
       var target = tagsList;
+      var getData = function(){
+        var hash = $.trim(window.location.hash);
+        if(hash){
+          hash = hash.replace(/^#/, '');
+          $('.article').children('h4').each(function(){
+            var $this = $(this);
+            if(hash === $.trim(this.id)){
+              $this.show();
+              $this.next().show();
+            }else{
+              $this.hide();
+              $this.next().hide();              
+            }
+          });
+        }
+      };
       $.each(tags||[], function(i, n){
         map[n] = $.trim(n || '').replace(/\s+/, '_');
       });
@@ -46,7 +64,7 @@ activePage: tags
       }), function(i, tag){
         var id = tag.id, value = tag.value;
         html = [
-        '<h5 id="', value, '"><em>', id, '</em></h5>',
+        '<h4 id="', value, '">', id, '</h4>',
         '<ul class="archives-list" id="', value, '_list"></ul>'
         ];
         $(html.join('')).insertAfter(target);
@@ -54,7 +72,9 @@ activePage: tags
         target.append(tagsList.children('li[data-tag="'+id+'"]').clone());        
       });
       tagsList.remove();
-      tagsList = null;       
+      html = tagsList = null; 
+      getData();
+      $(window).on('hashchange', getData);     
     });
   })(jQuery);
 </script>

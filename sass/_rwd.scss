@@ -1,8 +1,6 @@
 @mixin rwd($currentPage:'home'){
-	/* Landscape phone to portrait tablet */
-	/*@media (max-width: 768px)*/@media (max-width: 940px) { 
+	@media (max-width: 940px) { 
 		.wrapper{
-			padding-top: 52px;
 			padding-bottom: 0;
 		}
 		.articles{
@@ -10,7 +8,7 @@
 			border-right: none;			
 		}
 		.article, .sidenav-wrapper{
-			padding: 24px 18px;	
+			padding: 16px 18px;	
 		}
 		.footer-wrapper{
 			display: none;
@@ -38,10 +36,12 @@
 		}
 		.navigation{
 			width: 100%;
-			z-index: 100;
-			position: fixed;
+			position: relative;
 			ul{
 				margin-left: 8px;	
+			}
+			li{
+				margin-right: 0;	
 			}
 			a{
 				width: 3.4em;
@@ -69,27 +69,35 @@
 		}
 	}
 	 
-	/* Portrait tablet to landscape and desktop */
-	/*@media (min-width: 768px) and (max-width: 940px) {
-
-	}*/
-	 
 	/* Default: 940px and up  */
 	@media (min-width: 941px) and (max-width: 1210px) {
 		.articles{
 			border-left: 0;
+			.article:first-child{
+				padding-top: 20px;
+			}
 		}
 		.article-wrapper{
 			margin-left: 0;
 		}
-		.navigation ul{
-			margin-left: 15px;	
+		.navigation {
+			width: 100%;
+			position: relative;
+			li{
+				margin-right: 0;	
+			}			
+			ul{
+				margin-left: 15px;		
+			}
 		}
 		.footer-wrapper .footer{
 			margin-left: 30px;
 		}
 		.sidenav-wrapper{
 			visibility: visible !important;
+		}
+		.sidenav{
+			padding-top: 10px;
 		}		
 	}
 
@@ -99,7 +107,8 @@
 			float: left;
 			width: 300px;
 			z-index: 100;
-			position: relative;
+			position: fixed;
+			_position: relative;
 			background: transparent;
 			ul, li{
 				margin: 0;
@@ -119,8 +128,6 @@
 				&:hover{
 					background: #FFF;
 					color: $font-color;
-					/*position: relative;
-					right: -1px;*/
 					border-left-color: #f58220;
 					@include text-shadow(none);						
 				}				
@@ -133,8 +140,7 @@
 			a{
 				background: #FFF;
 				color: $font-color;
-				/*position: relative;
-				right: -1px;*/
+				margin-right: -1px;
 				border-left-color: #f58220;
 				@include text-shadow(none);					
 			}
@@ -142,13 +148,17 @@
 		.wrapper{
 			float: left;
 			width: 100%;
-			margin-left: -310px;
+			margin-left: -10px;
+			_margin-left: -310px;
 		}
 		.article-wrapper{
 			margin-left: 310px;
 		}
 		.articles{
 			@include border-radius(4px);
+			.article:first-child{
+				padding-top: 10px;
+			}
 		}
 		.footer-wrapper{
 			.footer{
@@ -157,6 +167,9 @@
 		}
 		.sidenav-wrapper{
 			visibility: visible !important;
+			.sidenav{
+				padding-top: 0px;	
+			}
 		}	
 	}	
 }

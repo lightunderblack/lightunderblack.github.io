@@ -47,7 +47,7 @@
 				b = b.toLowerCase();
 				return a > b ? 1 : ((a == b) ? 0 : -1);
 			}), function(i, tag){
-				html.push('<a href="/tag/'+tag+'" rel="'+(1+Math.random()*0.2)+'">'+tag+'</a>');
+				html.push('<a href="/tags/index.html#'+$.trim(tag).replace(/\s+/g,'_')+'" rel="'+(1+Math.random()*0.2)+'">'+tag+'</a>');
 			});
 			tagsList.html(html.join('')).show();
 			$('#tag-cloud a').tagcloud();

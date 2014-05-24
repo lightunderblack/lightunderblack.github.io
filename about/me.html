@@ -2,3 +2,15 @@
 layout: other
 activePage: about
 ---
+<script type="text/javascript">
+	/*$.ajax({
+		dataType: "jsonp",
+		url: 'https://api.douban.com/v2/book/user/vary/collections?status=read&tag=front-end',
+		success: function(result){
+			console.log(result);
+		}
+	});*/
+	$.getJSON('https://api.douban.com/v2/book/user/vary/collections?status=read&tag=front-end&callback=?',function(result){
+		//console.log(result);
+	});
+</script>

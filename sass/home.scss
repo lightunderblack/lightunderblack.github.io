@@ -20,6 +20,7 @@
 .container{
 	width: 100%;
 	float: left;
+	//margin-right: 0;
 	margin-right: $container-right-gutter;
 }
 
@@ -28,8 +29,11 @@
 }
 
 .sidenav-wrapper{
+	//right: 0;
 	float: left;
 	width: 300px;
+	//position: fixed;
+	//_position: static;
 }
 
 @include rwd();

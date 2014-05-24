@@ -32,11 +32,13 @@ activePage: archives
     $(function(){
       var archives = $('.archives-list');
       function getData(){
-        var year = location.hash;
-        archives.children().each(function(){
-          var $this = $(this);
-          $this.attr('data-year') === year ? $this.show() : $this.hide();
-        });        
+        var year = $.trim(location.hash);
+        if(year){
+          archives.children().each(function(){
+            var $this = $(this);
+            $this.attr('data-year') === year ? $this.show() : $this.hide();
+          });  
+        }      
       }
       getData();
       $(window).on('hashchange', getData);

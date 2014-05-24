@@ -19,16 +19,19 @@
 		color: $xxlight-dark;
 	}
 	.tag{
-		color: #999;
 		padding: 4px;
-		background: #EEE;
 		margin-right: 4px;
 		text-decoration: none;
 		@extend %border-radius;
 		@include transition(all .2s ease-in-out);
+		
 		&:hover{
 			color: #FFF;
 			background: #BABABA;
+		}
+		&, &:focus{
+			color: #999;
+			background: #EEE;
 		}
 	}	
 }
