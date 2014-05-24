@@ -1,1 +1,69 @@
 @import 'other';
+
+.introduction-wrapper{
+	padding: 10px 30px;
+
+	h3, .key-word{
+		color: $tag-color;
+	}
+
+	.key-word{
+		padding-left: 8px;
+	}	
+
+	.about-me{
+		h3{
+			margin: 0;
+			font-weight: bold;
+		}
+	}
+
+	.about-me-detail{
+		img{
+			float: right;
+			width: 30%;
+			height: auto;
+			background: #FFF;
+			margin-left: 10px;
+			padding: 10px 10px 20px;
+			border: 1px solid #EEE;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			@include transform(rotate(-4deg));
+			@include transition(transform ease-in-out .1);
+			@include box-shadow(1px 4px 10px rgba(0, 0, 0, .6));
+			
+			&:hover{
+				@include transform(rotate(8deg));	
+			}
+		}
+		.profile{
+			margin: 0 0 14px;
+			text-indent: 20px;
+		}
+		ul{
+			padding-left: 20px;
+			li{
+				margin: 0;
+			}
+		}
+		>ul{
+			padding: 0 0 14px 40px;
+		}
+	}
+
+	.no-important{
+		color: #AAA;
+	}
+
+	.skill, .interest{
+		p{
+			margin: 0;
+		}
+		.key-word{
+			padding-left: 0;
+		}
+	}
+}
