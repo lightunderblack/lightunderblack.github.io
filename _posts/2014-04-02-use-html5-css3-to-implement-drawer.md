@@ -15,7 +15,12 @@ tags: ["JavaScript", "HTML5", "CSS3"]
 
 #####*html*代码：#####
 
-<script src="https://gist.github.com/lightunderblack/27b42a32ceef843c94e2.js"></script>
+{%highlight javascript linenos%}
+<div id="container" class="container">
+	<div class="main"></div><!--主界面-->
+	<div class="nav"></div><!--菜单-->
+</div>
+{%endhighlight%}
 
 #####*css*代码：#####
 
@@ -124,7 +129,17 @@ tags: ["JavaScript", "HTML5", "CSS3"]
 
 #####初始化代码：#####
 
-<script src="https://gist.github.com/lightunderblack/fa4fbce0ba91b7af6463.js"></script>
+{%highlight javascript linenos%}
+$(function(){
+  var $container = $('#container');
+  new Drawer({
+    dir: 'right',//表示菜单位于右侧,默认为左侧
+    container: $container,
+    nav: $container.children('.nav'),
+    main: $container.children('.main')			
+  });
+});
+{%endhighlight%}
 
 [*源码下载*](/downloads/files/drawer.zip)
 
