@@ -11,7 +11,7 @@
         top = -($sidenavWrapper.outerHeight(true)+extractHeight)+'px';
     }
 
-    getHeight();
+    //getHeight();
 
 	//初始化
     new SmoothScroll({
@@ -22,6 +22,7 @@
     });
     
     $go2Top.on('click', function(){
+        getHeight();
         if($sidenavWrapper.css('visibility') === 'visible'){
             $sidenavWrapper.css('top', top);    
         }
@@ -32,6 +33,7 @@
     });
 
     $navigation.children('.menu').on('click', function(e){
+        getHeight();
     	if($sidenavWrapper.css('visibility') === 'hidden'){
     		$sidenavWrapper.css({
     			visibility: 'visible',
@@ -45,19 +47,17 @@
 
     $(document).on('click', function(e){
     	var target = e.srcElement || e.target;
+        getHeight();
     	if($sidenavWrapper.css('visibility') === 'visible'){
     		$sidenavWrapper.css('top', top);	
     	}
     });
 
-    $sidenavWrapper.on('webkitTransitionEnd', function(e){
+    $sidenavWrapper.on('transitionEnd webkitTransitionEnd mozTransitionEnd oTransitionEnd msTransitionEnd ', function(e){
     	var $this = $(this);
     	if(parseInt($this.css('top'), 10) < 0){
     		$this.css({visibility: 'hidden'});
     	}
     });
 
-    window.onorientationchange = window.onresize = function(){
-        getHeight(); 
-    };
 })(jQuery);

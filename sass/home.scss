@@ -16,27 +16,41 @@
 @import "component/pagination";
 @import "component/footer";
 
+.wrapper{
+	float: left;
+	width: 100%;
+	margin-left: -10px;
+	_margin-left: -20.66666666666667%;
+}
 /**main content*/
 .container{
 	width: 100%;
 	float: left;
-	//margin-right: 0;
-	margin-right: $container-right-gutter;
+	margin-right: -20.66666666666667%;
 }
 
 .article-wrapper{
-	margin-right: $articles-right-gutter;	
+	margin-right: 20.66666666666667%;
+	margin-left: 20.66666666666667%;	
 }
 
 .sidenav-wrapper{
-	//right: 0;
 	float: left;
-	width: 300px;
-	//position: fixed;
-	//_position: static;
+	width: 20%;
 }
 
-@include rwd();
+.articles{
+	@include border-radius(4px);
+	.article:first-child{
+		padding-top: 10px;
+	}
+}
+
+.footer-wrapper{
+	.footer{
+		margin-left: 20%;
+	}
+}
 
 .article{
 	width: auto;
@@ -69,10 +83,16 @@
 		@extend %title-hover;
 	}
 }
-
+@include active-navigation(){
+	a{
+		background: #FFF;
+		color: $font-color;
+		margin-right: -1px;
+		border-left-color: #F58220;
+		@include text-shadow(none);					
+	}
+};
+@include rwd();
 /**pink button*/
 @include pink-btn;
-
-
-
 

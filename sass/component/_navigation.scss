@@ -1,32 +1,45 @@
 .navigation{
-	background: $light-dark;
+	top: 0;
+	left: 0;
+	width: 20%;
+	float: left;
+	z-index: 100;
+	position: fixed;
+	_position: relative;
+	background: transparent;
 	ul{
-		float: left;
-		margin-left: 15px;		
-	}
-	li{
-		margin: 0;
-		float: left;
-		margin-right: .6em;
+		&, li{
+			margin: 0;
+			float: none;			
+		}
+		li{	
+			border-bottom: 1px solid $border-color;
+		}
 	}
 	.fa{
 		margin-right: 8px;
 	}
 	a{
-		height: 1.4em;
-		width: 3.8em;
+		width: auto;
+		height: auto;		
 		display: block;
 		font-weight: bold;
 		line-height: 1.4em;
-		text-align: center;
+		padding: 10px 20px;	
+		text-align: left;
 		text-decoration: none;
-		color: $navigation-color;
+		color: $font-color;
+		border-left: 4px solid transparent;
 		@include transition(all .3s ease-in-out);
 		&:hover{
-			@extend %active;
-			@include text-shadow(rgba($navigation-hover-color, .4) 1px 1px 0);	
-		}		
+			background: #FFF;
+			color: $font-color;
+			border-left-color: #f58220;						
+		}			
 	}
+	h4{
+		margin: 0;
+	}	
 	.menu{
 		display: none;
 		float: right;
