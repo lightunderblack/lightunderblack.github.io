@@ -7,14 +7,22 @@
 		color: $tag-color;
 	}
 
-	.key-word{
-		padding-left: 8px;
-	}	
+	.experence{
+		.key-word{
+			padding-left: 8px;
+		}			
+	}
 
 	.about-me{
 		h3{
 			margin: 0;
 			font-weight: bold;
+		}
+	}
+
+	.about-me, .about-me-detail{
+		>ul{
+			padding: 0 0 14px 40px;
 		}
 	}
 
@@ -64,11 +72,5 @@
 		p{
 			margin: 0;
 		}
-	}
-
-	.skill, .interest, .about-site{
-		.key-word{
-			padding-left: 0;
-		}		
 	}
 }
