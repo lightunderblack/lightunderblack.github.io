@@ -39,19 +39,21 @@
 				@include transform(rotate(8deg));	
 			}
 		}
-		.profile{
-			margin: 0 0 14px;
-			text-indent: 30px;
-		}
-		ul{
-			padding-left: 20px;
-			li{
-				margin: 0;
-			}
-		}
 		>ul{
 			padding: 0 0 14px 40px;
 		}
+	}
+
+	ul{
+		padding-left: 20px;
+		li{
+			margin: 0;
+		}
+	}
+	
+	.profile, .about-site{
+		text-indent: 24px;	
+		margin: 0 0 14px;
 	}
 
 	.no-important{
@@ -62,8 +64,11 @@
 		p{
 			margin: 0;
 		}
+	}
+
+	.skill, .interest, .about-site{
 		.key-word{
 			padding-left: 0;
-		}
+		}		
 	}
 }
