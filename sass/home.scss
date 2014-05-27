@@ -41,7 +41,7 @@
 
 .articles{
 	@include border-radius(4px);
-	.article:first-child{
+	.article:first-child, .first-article{
 		padding-top: 10px;
 	}
 }
